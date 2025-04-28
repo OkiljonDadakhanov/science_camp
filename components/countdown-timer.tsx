@@ -14,7 +14,7 @@ interface TimeLeft {
 
 export default function CountdownTimer() {
   // Set the date for the next camp session (June 15, 2025)
-  const nextSessionDate = new Date("June 15, 2025 00:00:00").getTime();
+  const nextSessionDate = new Date("June 11, 2025 00:00:00").getTime();
 
   const [timeLeft, setTimeLeft] = useState<TimeLeft>({
     days: 0,
@@ -82,7 +82,7 @@ export default function CountdownTimer() {
         <div className="flex flex-col items-center justify-center space-y-6 text-center">
           <div className="inline-flex items-center gap-2 rounded-full bg-white/20 px-4 py-2 text-sm backdrop-blur-sm">
             <CalendarClock className="h-4 w-4" />
-            <span className="font-medium">Next Session: June 15, 2025</span>
+            <span className="font-medium">Next Session: June 11, 2025</span>
           </div>
 
           <h2 className="text-2xl font-bold tracking-tighter sm:text-3xl md:text-4xl lg:text-5xl">

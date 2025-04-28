@@ -36,7 +36,7 @@ export default function AcademicSection() {
   ]
 
   return (
-    <section id="academic" className="w-full py-12 md:py-24 lg:py-32 bg-blue-50">
+    <section id="academic" className="w-full py-12 md:py-24 lg:py-32 bg-gradient-to-b from-white to-blue-50">
       <div className="container px-4 md:px-6">
         <div className="flex flex-col items-center justify-center space-y-4 text-center">
           <div className="space-y-2">
@@ -70,13 +70,16 @@ export default function AcademicSection() {
                 image: "/focused-female-engineer.png",
               },
             ].map((mentor, i) => (
-              <Card key={i} className="overflow-hidden">
+              <Card key={i} className="overflow-hidden transition-all duration-300 hover:shadow-lg">
                 <div className="aspect-square relative">
                   <Image src={mentor.image || "/placeholder.svg"} alt={mentor.name} fill className="object-cover" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 hover:opacity-100 transition-opacity duration-300"></div>
                 </div>
                 <CardContent className="p-6">
                   <h4 className="text-xl font-bold">{mentor.name}</h4>
-                  <p className="text-blue-600 font-medium">{mentor.role}</p>
+                  <p className="bg-gradient-to-r from-blue-700 to-blue-500 bg-clip-text text-transparent font-medium">
+                    {mentor.role}
+                  </p>
                   <p className="mt-2 text-gray-500">{mentor.bio}</p>
                 </CardContent>
               </Card>
@@ -88,15 +91,16 @@ export default function AcademicSection() {
           <h3 className="text-2xl font-bold mb-8 text-center">Subjects Covered</h3>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {subjects.map((subject, i) => (
-              <Card key={i}>
+              <Card key={i} className="transition-all duration-300 hover:shadow-lg hover:border-blue-200">
                 <CardContent className="p-6 flex flex-col items-center text-center">
-                  <div className="w-20 h-20 mb-4">
+                  <div className="w-20 h-20 mb-4 relative">
+                    <div className="absolute -inset-1 rounded-full bg-gradient-to-r from-blue-600/20 to-blue-400/20 blur-sm"></div>
                     <Image
                       src={subject.icon || "/placeholder.svg"}
                       alt={subject.name}
                       width={80}
                       height={80}
-                      className="object-contain"
+                      className="relative object-contain"
                     />
                   </div>
                   <h4 className="text-xl font-bold">{subject.name}</h4>

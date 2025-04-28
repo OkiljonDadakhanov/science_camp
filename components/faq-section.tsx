@@ -1,7 +1,12 @@
-"use client"
+"use client";
 
-import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion"
-import { Card } from "@/components/ui/card"
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion";
+import { Card } from "@/components/ui/card";
 
 export default function FAQSection() {
   const faqCategories = [
@@ -74,7 +79,8 @@ export default function FAQSection() {
             "No prior specialized knowledge is required. We welcome students with all levels of science background, from beginners to advanced. Our program is designed to challenge and engage students at their appropriate level.",
         },
         {
-          question: "Will campers receive any certification or academic credit?",
+          question:
+            "Will campers receive any certification or academic credit?",
           answer:
             "All campers receive a certificate of completion. While we don't offer formal academic credit, many schools recognize our program for enrichment purposes. We can provide detailed documentation of the curriculum covered upon request.",
         },
@@ -94,7 +100,8 @@ export default function FAQSection() {
             "All medications must be turned in to our health center upon arrival. Our medical staff will dispense medications according to the instructions provided during registration. Please ensure all medications are in their original containers with clear instructions.",
         },
         {
-          question: "What safety measures are in place for laboratory activities?",
+          question:
+            "What safety measures are in place for laboratory activities?",
           answer:
             "Safety is our top priority. All lab activities are supervised by qualified instructors with appropriate safety equipment provided. Campers receive comprehensive safety training before participating in any lab work, and our facilities meet or exceed all safety standards.",
         },
@@ -130,29 +137,41 @@ export default function FAQSection() {
         },
       ],
     },
-  ]
+  ];
 
   return (
-    <section id="faq" className="w-full py-12 md:py-24 lg:py-32 bg-gradient-to-b from-white to-blue-50">
+    <section
+      id="faq"
+      className="w-full py-12 md:py-24 lg:py-32 bg-gradient-to-b from-white to-blue-50"
+    >
       <div className="container px-4 md:px-6">
         <div className="flex flex-col items-center justify-center space-y-4 text-center mb-12">
           <div className="space-y-2">
-            <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">Frequently Asked Questions</h2>
+            <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
+              Frequently Asked Questions
+            </h2>
             <p className="max-w-[900px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-              Find answers to common questions about our Science Camp program, logistics, and more.
+              Find answers to common questions about our Science Camp program,
+              logistics, and more.
             </p>
           </div>
         </div>
 
         <div className="grid gap-6 md:grid-cols-2">
           {faqCategories.map((category, categoryIndex) => (
-            <Card key={categoryIndex} className="p-6 transition-all duration-300 hover:shadow-md">
+            <Card
+              key={categoryIndex}
+              className="p-6 transition-all duration-300 hover:shadow-md"
+            >
               <h3 className="text-xl font-bold mb-4 bg-gradient-to-r from-blue-700 to-blue-500 bg-clip-text text-transparent">
                 {category.title}
               </h3>
               <Accordion type="single" collapsible className="w-full">
                 {category.questions.map((faq, faqIndex) => (
-                  <AccordionItem key={faqIndex} value={`item-${categoryIndex}-${faqIndex}`}>
+                  <AccordionItem
+                    key={faqIndex}
+                    value={`item-${categoryIndex}-${faqIndex}`}
+                  >
                     <AccordionTrigger className="text-left font-medium hover:text-blue-600 transition-colors">
                       {faq.question}
                     </AccordionTrigger>
@@ -170,22 +189,21 @@ export default function FAQSection() {
           <p className="text-gray-500">
             Don't see your question here? Contact us at{" "}
             <a
-              href="mailto:info@sciencecamp.org"
+              href="mailto:info@olympcenter.uz"
               className="bg-gradient-to-r from-blue-700 to-blue-500 bg-clip-text text-transparent hover:underline"
             >
-              info@sciencecamp.org
+              info@olympcenter.uz
             </a>{" "}
             or call{" "}
             <a
-              href="tel:+11234567890"
+              href="tel:+998775503366"
               className="bg-gradient-to-r from-blue-700 to-blue-500 bg-clip-text text-transparent hover:underline"
             >
-              (123) 456-7890
+              +998 77 550 33 66
             </a>
           </p>
         </div>
       </div>
     </section>
-  )
+  );
 }
-  
