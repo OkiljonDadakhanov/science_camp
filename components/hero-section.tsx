@@ -1,5 +1,5 @@
-import Image from "next/image"
-import { Button } from "@/components/ui/button"
+import Image from "next/image";
+import { Button } from "@/components/ui/button";
 
 export default function HeroSection() {
   return (
@@ -17,8 +17,8 @@ export default function HeroSection() {
               </span>
             </h1>
             <p className="max-w-[600px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-              Ignite curiosity, foster innovation, and build lifelong skills through hands-on scientific exploration and
-              discovery.
+              Ignite curiosity, foster innovation, and build lifelong skills
+              through hands-on scientific exploration and discovery.
             </p>
             <div className="flex flex-col gap-2 min-[400px]:flex-row">
               <Button
@@ -40,7 +40,7 @@ export default function HeroSection() {
             <div className="relative">
               <div className="absolute -inset-1 rounded-xl bg-gradient-to-r from-blue-600 to-blue-400 opacity-30 blur-xl"></div>
               <Image
-                src="/placeholder.svg?key=37ggh"
+                src="/images/main.jpg"
                 alt="Science Camp students engaged in experiments"
                 width={700}
                 height={550}
@@ -51,5 +51,5 @@ export default function HeroSection() {
         </div>
       </div>
     </section>
-  )
+  );
 }
