@@ -112,7 +112,7 @@ export default function StaticMap() {
                 <div className="bg-white p-2 rounded-md shadow-md text-center">
                   <strong>Science Olympiad Center</strong>
                   <br />
-                  123 Science Way
+                  Otchopar-1, Darvozakent Street
                 </div>
               </div>
             </div>
