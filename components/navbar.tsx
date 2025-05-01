@@ -1,52 +1,57 @@
-"use client"
+"use client";
 
-import { useState, useEffect } from "react"
-import Link from "next/link"
-import { Menu, X } from "lucide-react"
-import { Button } from "@/components/ui/button"
-import { cn } from "@/lib/utils"
+import { useState, useEffect } from "react";
+import Link from "next/link";
+import { Menu, X } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { cn } from "@/lib/utils";
+import Image from "next/image";
 
 export default function Navbar() {
-  const [isOpen, setIsOpen] = useState(false)
-  const [isScrolled, setIsScrolled] = useState(false)
+  const [isOpen, setIsOpen] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
 
   // Handle scroll effect
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY > 10) {
-        setIsScrolled(true)
+        setIsScrolled(true);
       } else {
-        setIsScrolled(false)
+        setIsScrolled(false);
       }
-    }
+    };
 
-    window.addEventListener("scroll", handleScroll)
-    return () => window.removeEventListener("scroll", handleScroll)
-  }, [])
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   // Close mobile menu when clicking a link
   const handleLinkClick = () => {
-    setIsOpen(false)
-  }
+    setIsOpen(false);
+  };
 
   return (
     <header
       className={cn(
         "fixed top-0 left-0 right-0 z-50 transition-all duration-300",
-        isScrolled ? "bg-white border-b shadow-sm py-2" : "bg-transparent py-4",
+        isScrolled ? "bg-white border-b shadow-sm py-2" : "bg-transparent py-4"
       )}
     >
       <div className="container px-4 md:px-6 mx-auto">
         <div className="flex items-center justify-between">
           {/* Logo */}
           <Link href="/" className="flex items-center gap-2">
-            <div className="relative h-10 w-10 overflow-hidden">
+            <div className="relative h-16 w-16 overflow-hidden">
               {/* Logo placeholder - to be replaced later */}
-              <div className="h-full w-full bg-blue-600 flex items-center justify-center rounded-md">
-                <span className="text-white font-bold text-xs">LOGO</span>
+              <div className="h-full  flex items-center justify-center rounded-md">
+                <Image
+                  src="/images/logo.png"
+                  width={100}
+                  height={100}
+                  alt="Picture of the author"
+                />
               </div>
             </div>
-            <span className="font-bold text-lg text-blue-600">Science Camp</span>
           </Link>
 
           {/* Desktop Navigation */}
@@ -81,7 +86,11 @@ export default function Navbar() {
               onClick={() => setIsOpen(!isOpen)}
               aria-label="Toggle menu"
             >
-              {isOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
+              {isOpen ? (
+                <X className="h-6 w-6" />
+              ) : (
+                <Menu className="h-6 w-6" />
+              )}
             </button>
           </div>
         </div>
@@ -109,7 +118,10 @@ export default function Navbar() {
                 </Link>
               ))}
               <div className="pt-2">
-                <Button size="sm" className="w-full bg-blue-600 hover:bg-blue-700">
+                <Button
+                  size="sm"
+                  className="w-full bg-blue-600 hover:bg-blue-700"
+                >
                   Register Now
                 </Button>
               </div>
@@ -118,5 +130,5 @@ export default function Navbar() {
         )}
       </div>
     </header>
-  )
+  );
 }
