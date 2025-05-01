@@ -1,5 +1,5 @@
-import Image from "next/image"
-import { Card, CardContent } from "@/components/ui/card"
+import Image from "next/image";
+import { Card, CardContent } from "@/components/ui/card";
 
 export default function NonAcademicSection() {
   const activities = [
@@ -7,21 +7,21 @@ export default function NonAcademicSection() {
       title: "Sports & Recreation",
       description:
         "Stay active with swimming, hiking, team sports, and outdoor games that promote physical fitness and teamwork.",
-      image: "/placeholder.svg?height=300&width=500&query=students playing sports at summer camp",
+      image: "/images/sports.jpg",
     },
     {
       title: "Field Trips & Excursions",
       description:
         "Explore museums, research facilities, nature reserves, and other educational destinations that complement our curriculum.",
-      image: "/placeholder.svg?height=300&width=500&query=students on field trip to science museum",
+      image: "/images/trips.jpg",
     },
     {
       title: "Entertainment & Social Activities",
       description:
         "Enjoy campfires, talent shows, movie nights, and social events designed to build friendships and create lasting memories.",
-      image: "/placeholder.svg?height=300&width=500&query=students at campfire social event",
+      image: "/images/activities.jpg",
     },
-  ]
+  ];
 
   return (
     <section
@@ -31,16 +31,22 @@ export default function NonAcademicSection() {
       <div className="container px-4 md:px-6">
         <div className="flex flex-col items-center justify-center space-y-4 text-center">
           <div className="space-y-2">
-            <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">Non-Academic Activities</h2>
+            <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
+              Non-Academic Activities
+            </h2>
             <p className="max-w-[900px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-              We believe in a balanced approach to learning, combining academic rigor with fun recreational activities.
+              We believe in a balanced approach to learning, combining academic
+              rigor with fun recreational activities.
             </p>
           </div>
         </div>
 
         <div className="mt-12 grid gap-6 md:grid-cols-3">
           {activities.map((activity, i) => (
-            <Card key={i} className="overflow-hidden transition-all duration-300 hover:shadow-lg group">
+            <Card
+              key={i}
+              className="overflow-hidden transition-all duration-300 hover:shadow-lg group"
+            >
               <div className="aspect-video relative">
                 <Image
                   src={activity.image || "/placeholder.svg"}
@@ -65,14 +71,29 @@ export default function NonAcademicSection() {
               <ul className="space-y-3">
                 {[
                   { time: "7:30 AM - 8:30 AM", activity: "Breakfast" },
-                  { time: "9:00 AM - 12:00 PM", activity: "Morning Academic Sessions" },
+                  {
+                    time: "9:00 AM - 12:00 PM",
+                    activity: "Morning Academic Sessions",
+                  },
                   { time: "12:00 PM - 1:00 PM", activity: "Lunch" },
-                  { time: "1:00 PM - 3:00 PM", activity: "Intellectual Activities" },
-                  { time: "3:00 PM - 5:00 PM", activity: "Sports & Recreation" },
+                  {
+                    time: "1:00 PM - 3:00 PM",
+                    activity: "Intellectual Activities",
+                  },
+                  {
+                    time: "3:00 PM - 5:00 PM",
+                    activity: "Sports & Recreation",
+                  },
                   { time: "5:00 PM - 6:00 PM", activity: "Free Time" },
                   { time: "6:00 PM - 7:00 PM", activity: "Dinner" },
-                  { time: "7:00 PM - 9:00 PM", activity: "Evening Activities & Social Events" },
-                  { time: "9:00 PM - 10:00 PM", activity: "Reflection & Preparation" },
+                  {
+                    time: "7:00 PM - 9:00 PM",
+                    activity: "Evening Activities & Social Events",
+                  },
+                  {
+                    time: "9:00 PM - 10:00 PM",
+                    activity: "Reflection & Preparation",
+                  },
                   { time: "10:00 PM", activity: "Lights Out" },
                 ].map((item, i) => (
                   <li key={i} className="flex">
@@ -87,7 +108,7 @@ export default function NonAcademicSection() {
             <div className="relative h-[400px] rounded-xl overflow-hidden">
               <div className="absolute -inset-1 rounded-xl bg-gradient-to-r from-blue-600 to-blue-400 opacity-20 blur-md"></div>
               <Image
-                src="/placeholder.svg?height=400&width=600&query=science camp daily schedule activities collage"
+                src="/images/camp.jpg"
                 alt="A day at Science Camp"
                 fill
                 className="relative object-cover rounded-xl"
@@ -97,5 +118,5 @@ export default function NonAcademicSection() {
         </div>
       </div>
     </section>
-  )
+  );
 }

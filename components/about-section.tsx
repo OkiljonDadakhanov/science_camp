@@ -1,5 +1,5 @@
-import Image from "next/image"
-import { CheckCircle } from "lucide-react"
+import Image from "next/image";
+import { CheckCircle } from "lucide-react";
 
 export default function AboutSection() {
   return (
@@ -7,17 +7,20 @@ export default function AboutSection() {
       <div className="container px-4 md:px-6">
         <div className="flex flex-col items-center justify-center space-y-4 text-center">
           <div className="space-y-2">
-            <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">About Our Science Camp</h2>
+            <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
+              About Our Science Camp
+            </h2>
             <p className="max-w-[900px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-              Science Olympiad Center's Science Camp is a transformative experience designed to inspire the next
-              generation of scientists, engineers, and innovators.
+              Science Olympiad Center's Science Camp is a transformative
+              experience designed to inspire the next generation of scientists,
+              engineers, and innovators.
             </p>
           </div>
         </div>
         <div className="grid gap-6 lg:grid-cols-2 lg:gap-12 items-center mt-12">
           <div className="mx-auto w-full max-w-[500px] lg:max-w-none">
             <Image
-              src="/placeholder.svg?key=42858"
+              src="/images/about.webp"
               alt="Science Camp outdoor activities"
               width={700}
               height={550}
@@ -50,7 +53,9 @@ export default function AboutSection() {
                   { value: "12-18", label: "Age Range" },
                 ].map((stat, i) => (
                   <div key={i} className="text-center">
-                    <h4 className="text-3xl font-bold text-blue-600">{stat.value}</h4>
+                    <h4 className="text-3xl font-bold text-blue-600">
+                      {stat.value}
+                    </h4>
                     <p className="text-sm text-gray-500">{stat.label}</p>
                   </div>
                 ))}
@@ -60,5 +65,5 @@ export default function AboutSection() {
         </div>
       </div>
     </section>
-  )
+  );
 }
