@@ -8,7 +8,7 @@ const inter = Inter({ subsets: ["latin"] })
 export const metadata: Metadata = {
   title: "Science Camp by Science Olympiad Center",
   description:
-    "Ignite curiosity, foster innovation, and build lifelong skills through hands-on scientific exploration and discovery.",
+    "Ilm olamiga birinchi qadamingizni qo'ying — kashf qilish, o'rganish va o'zgarishga tayyor bo'ling.",
     generator: 'v0.dev'
 }
 
