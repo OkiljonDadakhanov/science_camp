@@ -1,11 +1,12 @@
 import Image from "next/image"
 import { Card, CardContent } from "@/components/ui/card"
+import { Badge } from "@/components/ui/badge"
 
 export default function AcademicSection() {
   const subjects = [
     {
       name: "Fizika",
-      description: "Kinematika, elektr, magnitizm va zamonaviy fizika bo‘limlarini amaliy tajribalar orqali o‘rganing.",
+      description: "Kinematika, elektr, magnitizm va zamonaviy fizika bo'limlarini amaliy tajribalar orqali o'rganing.",
       icon: "/physics-abstract.png",
     },
     {
@@ -15,60 +16,88 @@ export default function AcademicSection() {
     },
     {
       name: "Biologiya",
-      description: "Mikroskopiya va maydon ishlar orqali ekotizimlar, genetika va inson fiziologiyasini o‘rganing.",
+      description: "Mikroskopiya va maydon ishlar orqali ekotizimlar, genetika va inson fiziologiyasini o'rganing.",
       icon: "/dna-helix-icon.png",
     },
     {
       name: "Astronomiya",
-      description: "Osmon jismlarini kuzatib, fazo tadqiqotlari haqida ma’lumot oling va koinot hodisalarini tushuning.",
+      description: "Osmon jismlarini kuzatib, fazo tadqiqotlari haqida ma'lumot oling va koinot hodisalarini tushuning.",
       icon: "/celestial-symbols.png",
     },
     {
       name: "Matematika",
-      description: "Qiyin masalalar va real hayot misollari orqali mantiqiy fikrlash va muammo hal etish ko‘nikmalarini rivojlantiring.",
+      description: "Qiyin masalalar va real hayot misollari orqali mantiqiy fikrlash va muammo hal etish ko'nikmalarini rivojlantiring.",
       icon: "/abstract-mathematics.png",
     },
     {
       name: "Kompyuter savodxonligi",
-      description: "Dasturlash, algoritmlar va hisoblash fikrlashni kodlash loyihalari orqali o‘rganing.",
+      description: "Dasturlash, algoritmlar va hisoblash fikrlashni kodlash loyihalari orqali o'rganing.",
       icon: "/abstract-computer-science.png",
     },
   ];
   
-
   return (
     <section id="academic" className="w-full py-12 md:py-24 lg:py-32 bg-gradient-to-b from-white to-blue-50">
       <div className="container px-4 md:px-6">
         <div className="flex flex-col items-center justify-center space-y-4 text-center">
           <div className="space-y-2">
-            <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">Akademik dasturlar </h2>
+            <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">Akademik dasturlar</h2>
             <p className="max-w-[900px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-            Bizning akademik dasturimiz yetuk ilmiy salohiyatga ega, xalqaro olimpiadalarda yuqori natijalarni ko’rsatgan mentorlar tomonidan olib boriladi. Dastur iqtidorli oʻquvchilarni chuqurlashtirilgan nazariy bilim va amaliy ko‘nikmalar bilan ta’minlashga qaratilgan. 
+              Bizning akademik dasturimiz yetuk ilmiy salohiyatga ega, xalqaro olimpiadalarda yuqori natijalarni ko'rsatgan mentorlar tomonidan olib boriladi. Dastur iqtidorli oʻquvchilarni chuqurlashtirilgan nazariy bilim va amaliy ko'nikmalar bilan ta'minlashga qaratilgan.
             </p>
           </div>
         </div>
-
         <div className="mt-16">
           <h3 className="text-2xl font-bold mb-8 text-center">Bizning mentorlar</h3>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {[
               {
-                name: "Dr. Sarah Johnson",
-                role: "Physics Professor",
-                bio: "PhD from MIT with 15 years of research experience in quantum physics.",
-                image: "/thoughtful-physics-instructor.png",
+                name: "Firdavs Sobirov",
+                role: "Kimyo mentori",
+                education: "Yangi O'zbekiston universiteti, Kimyo muhandisligi yo'nalishi talabasi",
+                position: "O'zbekiston Kimyo fanidan terma jamoa rahbari",
+                achievements: [{ year: "2024", award: "IJSO 2024 terma jamoa rahbari" },
+                  { year: "2023", award: "IJSO 2023 terma jamoa rahbari" },
+                  { year: "2021", award: "55-Xalqaro Mendeleyev kimyo olimpiadasi – oltin medal" },
+                  { year: "2021", award: "53-Xalqaro Kimyo Olimpiadasi (Yaponiya) – bronza medal" },
+                  { year: "2021", award: "Respublika Kimyo fan olimpiadasi – 1-o'rin" },
+                  { year: "2021", award: "\"Tahsin-2021\" milliy mukofoti" },
+                  { year: "2020", award: "54-Xalqaro Mendeleyev kimyo olimpiadasi – bronza medal" },
+                  { year: "2020", award: "52-Xalqaro Kimyo Olimpiadasi (Turkiya) – bronza medal" },
+                  { year: "2019", award: "Kimyo fanidan viloyat bosqichi olimpiadada 1-o'rin" },
+                  { year: "2019", award: "Abu Rayhon Beruniy nomidagi Respublika kimyo olimpiadasida 2-o'rin" },
+                ],
+                image: "/mentors/firdavs.jpg",
               },
               {
-                name: "Prof. Michael Chen",
-                role: "Chemistry Specialist",
-                bio: "Award-winning educator with expertise in organic chemistry and material science.",
-                image: "/engaged-chemistry-professor.png",
+                name: "Olimjon Olimov",
+                role: "Matematika mentori",
+                education: "Yangi O'zbekiston Universiteti bitiruvchisi, Dasturiy ta'minot yo'nalishi mutaxassisi",
+                position: "Asos Akademiya o'quv markazi asoschisi",
+                achievements: [
+                  { year: "2024", award: "Xalqaro Matematika Musobaqasi (Hindiston) – O'zbekiston milliy jamoasi rahbari" },
+                  { year: "2024", award: "Xalqaro Zhautikov Olimpiadasi (Qozog'iston) – jamoa yetakchisi" },
+                  { year: "2024", award: "Junior Balkan Mathematics Olympiada – milliy jamoa rahbari" },
+                  { year: "2023", award: "ICPC Semifinal Astana – bronza medal" },
+                  { year: "2022-2024", award: "O'zbekiston milliy jamoalari uchun geometriya bo'yicha trener" },
+                ],
+                additionalInfo: "2024-yilgi Xalqaro Al-Xorazmiy Olimpiadasi va Respublika Olimpiadalarida hakam sifatida ishtirok etgan",
+                image: "/mentors/olim.jpg",
               },
               {
-                name: "Dr. Emily Rodriguez",
-                role: "Robotics Engineer",
-                bio: "Former NASA engineer specializing in autonomous systems and AI applications.",
-                image: "/focused-female-engineer.png",
+                name: "Saida Abdullaeyeva",
+                role: "Kimyo mentori",
+                education: "Toshkent davlat tibbiyot universiteti talabasi",
+                position: "Kimyo yoʻnalishi boʻyicha Zulfiya davlat mukofoti sohibasi",
+                achievements: [
+                  { year: "2024", award: "56-Xalqaro Kimyo Olimpiadasi (IChO) – kumush medal" },
+                  { year: "2024", award: "Kimyo fanidan respublika olimpiadasi – 1-o'rin" },
+                  { year: "2024", award: "58-Xalqaro Maktablararo Kimyo Olimpiadasi (IMChO) – bronza medal" },
+                  { year: "", award: "Abu Rayhon Beruniy nomidagi xalqaro kimyo olimpiadasi (ARBIChO) – kumush medal" },
+                  { year: "", award: "IMChO-Xalqaro Mendeleyev kimyo olimpiadasi ishtirokchisi" },
+                ],
+                additionalInfo: "Navoiy shahridagi 11-AFCHOʻIM maktabini 2024-yilda tamomlagan",
+                image: "/mentors/saida.jpg",
               },
             ].map((mentor, i) => (
               <Card key={i} className="overflow-hidden transition-all duration-300 hover:shadow-lg">
@@ -78,18 +107,63 @@ export default function AcademicSection() {
                 </div>
                 <CardContent className="p-6">
                   <h4 className="text-xl font-bold">{mentor.name}</h4>
-                  <p className="bg-gradient-to-r from-blue-700 to-blue-500 bg-clip-text text-transparent font-medium">
+                  <p className="bg-gradient-to-r from-blue-700 to-blue-500 bg-clip-text text-transparent font-medium mb-2">
                     {mentor.role}
                   </p>
-                  <p className="mt-2 text-gray-500">{mentor.bio}</p>
+                  
+                  <div className="space-y-4">
+                    <div>
+                      <p className="text-sm text-gray-600">{mentor.education}</p>
+                      <p className="text-sm font-medium text-gray-800">{mentor.position}</p>
+                    </div>
+                    
+                    <div>
+                      <p className="text-sm font-semibold text-gray-800 mb-1">Yutuqlar:</p>
+                      <div className="space-y-2">
+                        {mentor.achievements.slice(0, 3).map((achievement, j) => (
+                          <div key={j} className="flex items-start">
+                            {achievement.year && (
+                              <Badge variant="outline" className="mr-2 bg-blue-50">
+                                {achievement.year}
+                              </Badge>
+                            )}
+                            <p className="text-xs text-gray-600">{achievement.award}</p>
+                          </div>
+                        ))}
+                        
+                        {mentor.achievements.length > 3 && (
+                          <details className="mt-1">
+                            <summary className="text-xs text-blue-600 cursor-pointer">
+                              Barcha yutuqlarni ko'rish ({mentor.achievements.length - 3} ta qo'shimcha)
+                            </summary>
+                            <div className="mt-2 space-y-2 pl-1">
+                              {mentor.achievements.slice(3).map((achievement, j) => (
+                                <div key={j} className="flex items-start">
+                                  {achievement.year && (
+                                    <Badge variant="outline" className="mr-2 bg-blue-50">
+                                      {achievement.year}
+                                    </Badge>
+                                  )}
+                                  <p className="text-xs text-gray-600">{achievement.award}</p>
+                                </div>
+                              ))}
+                            </div>
+                          </details>
+                        )}
+                      </div>
+                    </div>
+                    
+                    {mentor.additionalInfo && (
+                      <p className="text-xs text-gray-500 italic">{mentor.additionalInfo}</p>
+                    )}
+                  </div>
                 </CardContent>
               </Card>
             ))}
           </div>
         </div>
-
         <div className="mt-16">
-          <h3 className="text-2xl font-bold mb-8 text-center">Amaliyot fanlari </h3>
+          <h3 className="text-2xl font-bold mb-8 text-center">Amaliyot fanlari</h3>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {subjects.map((subject, i) => (
               <Card key={i} className="transition-all duration-300 hover:shadow-lg hover:border-blue-200">

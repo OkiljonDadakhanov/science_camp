@@ -21,7 +21,7 @@ export default function HeroSection() {
                 size="lg"
                 className="text-lg py-6 px-8 bg-gradient-to-r from-blue-700 to-blue-500 hover:from-blue-800 hover:to-blue-600 transition-all duration-300"
               >
-                Ro'yhatdan o'tish
+                Ro'yxatdan o'tish
               </Button>
               <Button
                 size="lg"

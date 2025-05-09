@@ -76,7 +76,7 @@ export default function Navbar() {
               </Link>
             ))}
             <Button size="sm" className="bg-blue-600 hover:bg-blue-700">
-              Ro'yhatdan o'tish
+              Ro'yxatdan o'tish
             </Button>
           </nav>
 
