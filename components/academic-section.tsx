@@ -101,6 +101,22 @@ export default function AcademicSection() {
                 additionalInfo: "Navoiy shahridagi 11-AFCHOʻIM maktabini 2024-yilda tamomlagan",
                 image: "/mentors/saida.JPG",
               },
+              {
+                name: "Sardor Qurbonboyev",
+                role: "Biologiya bo‘yicha Mentor",
+                education: "ITMA Abu Ali Ibn Sino nomidagi ixtisoslashtirilgan maktab bitiruvchisi (2024)",
+                position: "Hozirda Toshkent Tibbiyot Akademiyasi 1-kurs talabasi",
+                achievements: [
+                  { year: "", award: "Abu Ali Ibn Sino nomidagi Xalqaro Biologiya Olimpiadasi kumush medal sohibi" },
+                  { year: "", award: " STEM olimpiadasining Respublika bosqichi 1-o‘rin g‘olibi" },
+                  { year: "", award: "Biologiya fanidan Asosiy Olimpiadaning viloyat bosqichi 1-o‘rin egasi" },
+                  { year: "", award: "Abu Ali Ibn Sino tayanch maktabida biologiya fanidan olimpiadaga tayyorlovchi trener" },
+                  { year: "", award: "35-Xalqaro biologiya olimpaidasi ishtirokchisi " },
+                   { year: "", award: "O‘quvchilarga sitologiya, molekulyar biologiya, fiziologiya, genetika, ekologiya va bioinformatika fanlari bo‘yicha chuqurlashtirilgan bilim beradi " },
+                ],
+                additionalInfo: "Navoiy shahridagi 11-AFCHOʻIM maktabini 2024-yilda tamomlagan",
+                image: "/mentors/sardor.jpg",
+              },
             ].map((mentor, i) => (
               <Card key={i} className="overflow-hidden transition-all duration-300 hover:shadow-lg">
                 <div className="aspect-square relative">
