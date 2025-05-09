@@ -87,21 +87,7 @@ Toshkent davlat texnika universiteti magistri (elektronika), 2023-yil`,
   ],
   image: "/mentors/fayyoz.jpg",
 },
-              {
-                name: "Olimjon Olimov",
-                role: "Matematika mentori",
-                education: "Yangi O'zbekiston Universiteti bitiruvchisi, Dasturiy ta'minot yo'nalishi mutaxassisi",
-                position: "Asos Akademiya o'quv markazi asoschisi",
-                achievements: [
-                  { year: "2024", award: "Xalqaro Matematika Musobaqasi (Hindiston) – O'zbekiston milliy jamoasi rahbari" },
-                  { year: "2024", award: "Xalqaro Zhautikov Olimpiadasi (Qozog'iston) – jamoa yetakchisi" },
-                  { year: "2024", award: "Junior Balkan Mathematics Olympiada – milliy jamoa rahbari" },
-                  { year: "2023", award: "ICPC Semifinal Astana – bronza medal" },
-                  { year: "2022-2024", award: "O'zbekiston milliy jamoalari uchun geometriya bo'yicha trener" },
-                ],
-                additionalInfo: "2024-yilgi Xalqaro Al-Xorazmiy Olimpiadasi va Respublika Olimpiadalarida hakam sifatida ishtirok etgan",
-                image: "/mentors/olim.JPG",
-              },
+             
               {
                 name: "Saida Abdullaeyeva",
                 role: "Kimyo mentori",
@@ -117,6 +103,20 @@ Toshkent davlat texnika universiteti magistri (elektronika), 2023-yil`,
                 additionalInfo: "Navoiy shahridagi 11-AFCHOʻIM maktabini 2024-yilda tamomlagan",
                 image: "/mentors/saida.JPG",
               },
+              {
+  name: "Asliddin Fayzullaev",
+  role: "Fizika mentori",
+  education: "Oʻzbekiston Milliy Universiteti, Fizika fakulteti magistranti (2024–hozir)",
+  position: "I toifali o‘qituvchi",
+  achievements: [
+    { year: "2025", award: "O‘qituvchilar oʻrtasida Respublika fizika olimpiadasida 1-oʻrin" },
+    { year: "2025", award: "I toifa unvoni berilgan" },
+    { year: "2024", award: "GRE Physics xalqaro sertifikati – 900/990 ball" },
+    { year: "2020–2024", award: "OʻzMU Fizika fakulteti talabasi – GPA 92 ball" },
+    { year: "2018", award: "Innovatsion Respublika fizika olimpiadasida 1-oʻrin" },
+  ],
+  image: "/mentors/asliddin.jpg"
+},
               {
                 name: "Sardor Qurbonboyev",
                 role: "Biologiya bo‘yicha Mentor",
