@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   title: "Science Camp by Science Olympiad Center",
   description:
     "Ilm olamiga birinchi qadamingizni qo'ying — kashf qilish, o'rganish va o'zgarishga tayyor bo'ling.",
-    generator: 'v0.dev'
+    
 }
 
 export default function RootLayout({
