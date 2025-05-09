@@ -84,7 +84,7 @@ export default function AcademicSection() {
                   { year: "2022-2024", award: "O'zbekiston milliy jamoalari uchun geometriya bo'yicha trener" },
                 ],
                 additionalInfo: "2024-yilgi Xalqaro Al-Xorazmiy Olimpiadasi va Respublika Olimpiadalarida hakam sifatida ishtirok etgan",
-                image: "/mentors/olim.jpg",
+                image: "/mentors/olim.JPG",
               },
               {
                 name: "Saida Abdullaeyeva",
@@ -99,7 +99,7 @@ export default function AcademicSection() {
                   { year: "", award: "IMChO-Xalqaro Mendeleyev kimyo olimpiadasi ishtirokchisi" },
                 ],
                 additionalInfo: "Navoiy shahridagi 11-AFCHOʻIM maktabini 2024-yilda tamomlagan",
-                image: "/mentors/saida.jpg",
+                image: "/mentors/saida.JPG",
               },
             ].map((mentor, i) => (
               <Card key={i} className="overflow-hidden transition-all duration-300 hover:shadow-lg">
