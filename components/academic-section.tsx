@@ -72,6 +72,22 @@ export default function AcademicSection() {
                 image: "/mentors/firdavs.jpg",
               },
               {
+  name: "Fayyoz Tuychiyev",
+  role: "Robototexnika bo‘yicha mentor",
+  education: `Sankt-Peterburg davlat elektrotexnika universiteti "LETI" bitiruvchisi (elektronika va nanoelektronika), 2021-yil;
+Toshkent davlat texnika universiteti magistri (elektronika), 2023-yil`,
+  position: "Robototexnika bo‘yicha mentor",
+  achievements: [
+    { year: "2017", award: "“Kelajak muhandislari” olimpiadasi g‘olibi (Sankt-Peterburg davlat elektrotexnika universiteti tomonidan)" },
+    { year: "2018", award: "Sankt-Peterburg shahri universitetlari o‘rtasida o‘tkazilgan fizika fan olimpiadasi – 3-o‘rin" },
+    { year: "2019", award: "“Elektrotexnikaning nazariy asoslari” universitet fan olimpiadasi sovrindori" },
+    { year: "2021", award: "Butun Rossiya “Mobil Aloqa Sistemalarining Innovatsion Texnologiyalari” olimpiadasi g‘olibi" },
+    { year: "2025", award: "Maktablar uchun robototexnika bo‘yicha o‘quv qo‘llanma muallifi" },
+    { year: "2021-2025", award: "Robototexnika va elektronika bo‘yicha 10 ga yaqin ilmiy maqola va tezislar muallifi" },
+  ],
+  image: "/mentors/fayyoz.jpg",
+},
+              {
                 name: "Olimjon Olimov",
                 role: "Matematika mentori",
                 education: "Yangi O'zbekiston Universiteti bitiruvchisi, Dasturiy ta'minot yo'nalishi mutaxassisi",
