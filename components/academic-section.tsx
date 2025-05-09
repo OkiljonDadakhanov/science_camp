@@ -56,7 +56,9 @@ export default function AcademicSection() {
                 role: "Kimyo mentori",
                 education: "Yangi O'zbekiston universiteti, Kimyo muhandisligi yo'nalishi talabasi",
                 position: "O'zbekiston Kimyo fanidan terma jamoa rahbari",
-                achievements: [{ year: "2024", award: "IJSO 2024 terma jamoa rahbari" },
+                achievements: [
+                   { year: "2023-2024", award: "Respublika va Xalqaro olimpiadaga saralash bosqichlarida hakam sifatida ishtirok etgan" },
+                  { year: "2024", award: "IJSO 2024 terma jamoa rahbari" },
                   { year: "2023", award: "IJSO 2023 terma jamoa rahbari" },
                   { year: "2021", award: "55-Xalqaro Mendeleyev kimyo olimpiadasi – oltin medal" },
                   { year: "2021", award: "53-Xalqaro Kimyo Olimpiadasi (Yaponiya) – bronza medal" },
