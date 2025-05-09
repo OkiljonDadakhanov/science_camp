@@ -39,16 +39,17 @@ export default function Navbar() {
     >
       <div className="container px-4 md:px-6 mx-auto">
         <div className="flex items-center justify-between">
-          {/* Logo */}
+          {/* Logo - Increased size from h-16 w-16 to h-24 w-24 */}
           <Link href="/" className="flex items-center gap-2">
-            <div className="relative h-16 w-16 overflow-hidden">
+            <div className="relative h-28 w-28 overflow-hidden">
               {/* Logo placeholder - to be replaced later */}
-              <div className="h-full  flex items-center justify-center rounded-md">
+              <div className="h-full flex items-center justify-center rounded-md">
                 <Image
                   src="/images/logo.png"
-                  width={100}
-                  height={100}
+                  width={200}
+                  height={200}
                   alt="Picture of the author"
+                  className="object-contain"
                 />
               </div>
             </div>
@@ -58,12 +59,12 @@ export default function Navbar() {
           <nav className="hidden md:flex items-center gap-6">
             {[
               { name: "Home", href: "#" },
-              { name: "About", href: "#about" },
-              { name: "Academic", href: "#academic" },
-              { name: "Activities", href: "#intellectual-activities" },
-              { name: "Recreation", href: "#non-academic" },
-              { name: "FAQ", href: "#faq" },
-              { name: "Location", href: "#location" },
+              { name: "Biz haqimizda", href: "#about" },
+              { name: "Akademik o'quv dasturlari", href: "#academic" },
+              { name: "Foto lavhalar", href: "#intellectual-activities" },
+              { name: "Ijtimoiy hayot ", href: "#non-academic" },
+              { name: "Ko'p beriladigan savollar ", href: "#faq" },
+              { name: "Joylashuv", href: "#location" },
             ].map((link, i) => (
               <Link
                 key={i}
@@ -75,7 +76,7 @@ export default function Navbar() {
               </Link>
             ))}
             <Button size="sm" className="bg-blue-600 hover:bg-blue-700">
-              Register Now
+              Ro'yhatdan o'tish
             </Button>
           </nav>
 

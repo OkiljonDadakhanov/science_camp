@@ -4,51 +4,52 @@ import { Card, CardContent } from "@/components/ui/card"
 export default function AcademicSection() {
   const subjects = [
     {
-      name: "Physics",
-      description: "Explore mechanics, electricity, magnetism, and modern physics through hands-on experiments.",
+      name: "Fizika",
+      description: "Kinematika, elektr, magnitizm va zamonaviy fizika bo‘limlarini amaliy tajribalar orqali o‘rganing.",
       icon: "/physics-abstract.png",
     },
     {
-      name: "Chemistry",
-      description: "Conduct chemical reactions, analyze compounds, and understand molecular structures.",
+      name: "Kimyo",
+      description: "Kimyoviy reaksiyalarni bajarish, birikmalarni tahlil qilish va molekulyar tuzilmalar bilan tanishing.",
       icon: "/chemistry-beakers.png",
     },
     {
-      name: "Biology",
-      description: "Study ecosystems, genetics, and human physiology through microscopy and field work.",
+      name: "Biologiya",
+      description: "Mikroskopiya va maydon ishlar orqali ekotizimlar, genetika va inson fiziologiyasini o‘rganing.",
       icon: "/dna-helix-icon.png",
     },
     {
-      name: "Astronomy",
-      description: "Observe celestial bodies, learn about space exploration, and understand cosmic phenomena.",
+      name: "Astronomiya",
+      description: "Osmon jismlarini kuzatib, fazo tadqiqotlari haqida ma’lumot oling va koinot hodisalarini tushuning.",
       icon: "/celestial-symbols.png",
     },
     {
-      name: "Mathematics",
-      description: "Develop problem-solving skills through challenging puzzles and real-world applications.",
+      name: "Matematika",
+      description: "Qiyin masalalar va real hayot misollari orqali mantiqiy fikrlash va muammo hal etish ko‘nikmalarini rivojlantiring.",
       icon: "/abstract-mathematics.png",
     },
     {
-      name: "Computer Science",
-      description: "Learn programming, algorithms, and computational thinking through coding projects.",
+      name: "Kompyuter savodxonligi",
+      description: "Dasturlash, algoritmlar va hisoblash fikrlashni kodlash loyihalari orqali o‘rganing.",
       icon: "/abstract-computer-science.png",
     },
-  ]
+  ];
+  
 
   return (
     <section id="academic" className="w-full py-12 md:py-24 lg:py-32 bg-gradient-to-b from-white to-blue-50">
       <div className="container px-4 md:px-6">
         <div className="flex flex-col items-center justify-center space-y-4 text-center">
           <div className="space-y-2">
-            <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">Academic Process</h2>
+            <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">Akademik dasturlar </h2>
             <p className="max-w-[900px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-              Our comprehensive academic program is led by expert mentors who are passionate about science education.
+            Bizning akademik dasturimiz yetuk ilmiy salohiyatga ega, xalqaro olimpiadalarda yuqori natijalarni ko’rsatgan mentorlar tomonidan olib boriladi. Dastur iqtidorli oʻquvchilarni chuqurlashtirilgan nazariy bilim va amaliy ko‘nikmalar bilan ta’minlashga qaratilgan. 
             </p>
           </div>
         </div>
 
         <div className="mt-16">
-          <h3 className="text-2xl font-bold mb-8 text-center">Our Expert Mentors</h3>
+          <h3 className="text-2xl font-bold mb-8 text-center">Bizning mentorlar</h3>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {[
               {
@@ -88,7 +89,7 @@ export default function AcademicSection() {
         </div>
 
         <div className="mt-16">
-          <h3 className="text-2xl font-bold mb-8 text-center">Subjects Covered</h3>
+          <h3 className="text-2xl font-bold mb-8 text-center">Amaliyot fanlari </h3>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {subjects.map((subject, i) => (
               <Card key={i} className="transition-all duration-300 hover:shadow-lg hover:border-blue-200">

@@ -4,21 +4,21 @@ import { Card, CardContent } from "@/components/ui/card";
 export default function NonAcademicSection() {
   const activities = [
     {
-      title: "Sports & Recreation",
+      title: "Sport tadbirlari",
       description:
-        "Stay active with swimming, hiking, team sports, and outdoor games that promote physical fitness and teamwork.",
+        "Jismoniy faollikni oshirish va sog‘lom raqobatni rivojlantirish uchun turli sport musobaqalari va o‘yinlar.",
       image: "/images/sports.jpg",
     },
     {
-      title: "Field Trips & Excursions",
+      title: "Mahalliy Ekskursiya va muzeylarga tashriflar",
       description:
-        "Explore museums, research facilities, nature reserves, and other educational destinations that complement our curriculum.",
+        "Madaniyat va tarixni o‘rganish uchun mahalliy diqqatga sazovor joylar va muzeylarga ekskursiyalar.",
       image: "/images/trips.jpg",
     },
     {
-      title: "Entertainment & Social Activities",
+      title: "Ko’ngilochar dasturlar ",
       description:
-        "Enjoy campfires, talent shows, movie nights, and social events designed to build friendships and create lasting memories.",
+        "Talantlar ko‘rgazmasi, kino kechalari va ijtimoiy tadbirlar orqali do‘stlikni mustahkamlash va unutilmas xotiralar yaratish.",
       image: "/images/activities.jpg",
     },
   ];
@@ -32,11 +32,10 @@ export default function NonAcademicSection() {
         <div className="flex flex-col items-center justify-center space-y-4 text-center">
           <div className="space-y-2">
             <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
-              Non-Academic Activities
+            Ijtimoiy hayot 
             </h2>
             <p className="max-w-[900px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-              We believe in a balanced approach to learning, combining academic
-              rigor with fun recreational activities.
+            Qiziqarli mashg‘ulotlar orqali ishtirokchilar jamoada ishlash, do‘stona munosabatlar o‘rnatish va yetakchilik qobiliyatlarini rivojlantiradilar.
             </p>
           </div>
         </div>
@@ -64,59 +63,9 @@ export default function NonAcademicSection() {
           ))}
         </div>
 
-        <div className="mt-16 bg-gradient-to-br from-white to-blue-50 rounded-xl p-8 shadow-lg">
-          <div className="grid gap-6 lg:grid-cols-2 items-center">
-            <div>
-              <h3 className="text-2xl font-bold mb-4">A Day at Science Camp</h3>
-              <ul className="space-y-3">
-                {[
-                  { time: "7:30 AM - 8:30 AM", activity: "Breakfast" },
-                  {
-                    time: "9:00 AM - 12:00 PM",
-                    activity: "Morning Academic Sessions",
-                  },
-                  { time: "12:00 PM - 1:00 PM", activity: "Lunch" },
-                  {
-                    time: "1:00 PM - 3:00 PM",
-                    activity: "Intellectual Activities",
-                  },
-                  {
-                    time: "3:00 PM - 5:00 PM",
-                    activity: "Sports & Recreation",
-                  },
-                  { time: "5:00 PM - 6:00 PM", activity: "Free Time" },
-                  { time: "6:00 PM - 7:00 PM", activity: "Dinner" },
-                  {
-                    time: "7:00 PM - 9:00 PM",
-                    activity: "Evening Activities & Social Events",
-                  },
-                  {
-                    time: "9:00 PM - 10:00 PM",
-                    activity: "Reflection & Preparation",
-                  },
-                  { time: "10:00 PM", activity: "Lights Out" },
-                ].map((item, i) => (
-                  <li key={i} className="flex">
-                    <span className="font-medium w-36 bg-gradient-to-r from-blue-700 to-blue-500 bg-clip-text text-transparent">
-                      {item.time}
-                    </span>
-                    <span>{item.activity}</span>
-                  </li>
-                ))}
-              </ul>
-            </div>
-            <div className="relative h-[400px] rounded-xl overflow-hidden">
-              <div className="absolute -inset-1 rounded-xl bg-gradient-to-r from-blue-600 to-blue-400 opacity-20 blur-md"></div>
-              <Image
-                src="/images/camp.jpg"
-                alt="A day at Science Camp"
-                fill
-                className="relative object-cover rounded-xl"
-              />
-            </div>
-          </div>
+       
         </div>
-      </div>
+      
     </section>
   );
 }

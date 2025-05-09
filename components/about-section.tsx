@@ -8,12 +8,13 @@ export default function AboutSection() {
         <div className="flex flex-col items-center justify-center space-y-4 text-center">
           <div className="space-y-2">
             <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
-              About Our Science Camp
+            Biz haqimizda 
             </h2>
             <p className="max-w-[900px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-              Science Olympiad Center's Science Camp is a transformative
-              experience designed to inspire the next generation of scientists,
-              engineers, and innovators.
+            Summer Science Camp — bu Fan Olimpiadalari Markazi va Iqtidorlilar maktabi tomonidan 5–8-sinf o‘quvchilari uchun tashkil etilgan tanlov asosidagi ilmiy oromgoh.
+Oromgohda ishtirokchilar matematika, fizika, kimyo, biologiya kabi yo‘nalishlar bo‘yicha chuqurlashtirilgan bilimlar va amaliy ko‘nikmalarni egallaydi.
+
+
             </p>
           </div>
         </div>
@@ -28,15 +29,14 @@ export default function AboutSection() {
             />
           </div>
           <div className="space-y-4">
-            <h3 className="text-2xl font-bold">Why Choose Our Science Camp?</h3>
+            <h3 className="text-2xl font-bold">Nega aynan biz?</h3>
             <ul className="space-y-3">
               {[
-                "Expert mentors from leading universities and research institutions",
-                "Hands-on experiments and real-world applications",
-                "State-of-the-art facilities and equipment",
-                "Balanced program with academic and recreational activities",
-                "Develop critical thinking and problem-solving skills",
-                "Build lasting friendships with like-minded peers",
+                "Xalqaro olimpiada g‘oliblari va tajribali mentorlar bilan chuqur darslar",
+                "Robototexnika, muhandislik va kosmonavtika bo‘yicha laboratoriya mashg‘ulotlari",
+                "Innovatsion fikrlashni shakllantiruvchi loyihalar",
+                "Sport, intellektual va ijodiy tadbirlar",
+                "Har bir ishtirokchiga sertifikat, sovg‘alar va xalqaro tayyorgarlik uchun imkoniyatlar",
               ].map((item, i) => (
                 <li key={i} className="flex items-start gap-2">
                   <CheckCircle className="h-5 w-5 text-blue-600 mt-0.5" />
@@ -47,10 +47,10 @@ export default function AboutSection() {
             <div className="pt-4">
               <div className="grid grid-cols-2 gap-4 sm:grid-cols-4">
                 {[
-                  { value: "2", label: "Week Program" },
-                  { value: "50+", label: "Activities" },
-                  { value: "20+", label: "Expert Mentors" },
-                  { value: "12-18", label: "Age Range" },
+                  { value: "1", label: "Haftalik dastur" },
+                  { value: "50+", label: "Mashg’ulotlar " },
+                  { value: "20+", label: "Mentorlar " },
+                  { value: "11-14", label: "Yosh oralig’i" },
                 ].map((stat, i) => (
                   <div key={i} className="text-center">
                     <h4 className="text-3xl font-bold text-blue-600">

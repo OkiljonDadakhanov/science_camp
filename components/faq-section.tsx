@@ -148,11 +148,10 @@ export default function FAQSection() {
         <div className="flex flex-col items-center justify-center space-y-4 text-center mb-12">
           <div className="space-y-2">
             <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
-              Frequently Asked Questions
+            Ko’p beriladigan savollar 
             </h2>
             <p className="max-w-[900px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-              Find answers to common questions about our Science Camp program,
-              logistics, and more.
+            Science Camp dasturimiz, logistika va boshqalar haqida umumiy savollarga javob toping.
             </p>
           </div>
         </div>
@@ -187,19 +186,20 @@ export default function FAQSection() {
 
         <div className="mt-12 text-center">
           <p className="text-gray-500">
-            Don't see your question here? Contact us at{" "}
-            <a
-              href="mailto:info@olympcenter.uz"
-              className="bg-gradient-to-r from-blue-700 to-blue-500 bg-clip-text text-transparent hover:underline"
-            >
-              info@olympcenter.uz
-            </a>{" "}
-            or call{" "}
+          Savolingizni bu yerda ko‘rmayapsizmi? Biz bilan bog'laning{" "}
             <a
               href="tel:+998775503366"
               className="bg-gradient-to-r from-blue-700 to-blue-500 bg-clip-text text-transparent hover:underline"
             >
-              +998 77 550 33 66
+               +998 77 550 33 66
+            </a>{" "}
+            yoki {" "}
+            <a
+              href="mailto:info@olympcenter.uz"
+              className="bg-gradient-to-r from-blue-700 to-blue-500 bg-clip-text text-transparent hover:underline"
+            >
+                            info@olympcenter.uz
+
             </a>
           </p>
         </div>
