@@ -13,25 +13,26 @@ export default function ActivitiesSlider() {
     {
       title: "Robotics Coding",
       description:
-        "Build and program robots to complete challenges and solve real-world problems.",
+        "Robotlarni qurish va dasturlash orqali turli vazifalarni bajaring hamda real hayotdagi muammolarga yechim toping.",
       image: "/images/robotics.jpg",
     },
     {
-      title: "Rocket Building",
+      title: "Raketa Yasash",
       description:
-        "Design, construct, and launch model rockets while learning about aerodynamics and propulsion.",
+        "Aerodinamika va harakatlantiruvchi kuchlar (proplyusiya) haqida o‘rganib, model raketalarni loyihalang, yasang va uchiring.",
       image: "/images/rocket.jpg",
     },
+
     {
-      title: "Laboratory Experiments",
+      title: "Laboratoriya Tajribalari",
       description:
-        "Conduct advanced experiments in our fully-equipped labs under expert supervision.",
+        "To‘liq jihozlangan laboratoriyalarimizda mutaxassislar rahbarligida ilg‘or tajribalar o‘tkazing.",
       image: "/images/lab.jpg",
     },
     {
-      title: "Space Exploration",
+      title: "Fazoni O‘rganish",
       description:
-        "Use telescopes and planetarium technology to observe and learn about celestial objects.",
+        "Teleskoplar va planetariy texnologiyalari yordamida osmon jismlarini kuzating va ular haqida bilim oling.",
       image: "/images/space1.jpg",
     },
   ];
@@ -84,7 +85,8 @@ export default function ActivitiesSlider() {
               Foto lavhalar
             </h2>
             <p className="max-w-[900px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-            Amaliy tajriba asosida fikrlashni chuqurlashtiring va muammolarni tahlil qilish ko‘nikmasini rivojlantiring
+              Amaliy tajriba asosida fikrlashni chuqurlashtiring va muammolarni
+              tahlil qilish ko‘nikmasini rivojlantiring
             </p>
           </div>
         </div>
