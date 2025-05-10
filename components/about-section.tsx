@@ -65,7 +65,6 @@ export default function AboutSection() {
           </div>
         </div>
 
-        {/* Tashkilotchilar Section */}
         <div className="mt-24">
           <h3 className="text-2xl font-bold text-center mb-8">
             Tashkilotchilar
