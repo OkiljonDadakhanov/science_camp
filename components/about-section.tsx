@@ -49,7 +49,7 @@ export default function AboutSection() {
               <div className="grid grid-cols-2 gap-4 sm:grid-cols-4">
                 {[
                   { value: "1", label: "Haftalik dastur" },
-                  { value: "50+", label: "Mashg'ulotlar " },
+                  { value: "50+", label: "Mashg'ulotlar" },
                   { value: "20+", label: "Mentorlar " },
                   { value: "5-6-7-8-9", label: "Sinflar uchun" },
                 ].map((stat, i) => (
