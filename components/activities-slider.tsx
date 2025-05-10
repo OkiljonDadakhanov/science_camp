@@ -11,7 +11,7 @@ import { Button } from "@/components/ui/button";
 export default function ActivitiesSlider() {
   const activities = [
     {
-      title: "Robotics Coding",
+      title: "Robo Coding",
       description:
         "Robotlarni qurish va dasturlash orqali turli vazifalarni bajaring hamda real hayotdagi muammolarga yechim toping.",
       image: "/images/robotics.jpg",
