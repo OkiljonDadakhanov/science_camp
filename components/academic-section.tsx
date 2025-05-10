@@ -272,7 +272,7 @@ Toshkent davlat texnika universiteti magistri (elektronika), 2023-yil`,
                       "Innovatsion Respublika fizika olimpiadasida 1-oʻrin",
                   },
                 ],
-                image: "/mentors/asliddin.jpg",
+                image: "/mentors/asliddin.JPG",
               },
               {
                 name: "Sardor Qurbonboyev",
