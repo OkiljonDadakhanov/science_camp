@@ -50,7 +50,7 @@ export default function AboutSection() {
                 {[
                   { value: "1", label: "Haftalik dastur" },
                   { value: "50+", label: "Mashg'ulotlar" },
-                  { value: "20+", label: "Mentorlar " },
+                  { value: "20+", label: "Mentorlar" },
                   { value: "5-6-7-8-9", label: "Sinflar uchun" },
                 ].map((stat, i) => (
                   <div key={i} className="text-center">
