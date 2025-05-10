@@ -12,8 +12,8 @@ export default function AboutSection() {
             </h2>
             <p className="max-w-[900px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
               Summer Science Camp — bu Fan Olimpiadalari Markazi va Iqtidorlar
-              maktabi tomonidan 5–6-7-8-9-sinf o'quvchilari uchun tashkil etilgan
-              tanlov asosidagi ilmiy oromgoh. Oromgohda ishtirokchilar
+              maktabi tomonidan 5–6-7-8-9-sinf o'quvchilari uchun tashkil
+              etilgan tanlov asosidagi ilmiy oromgoh. Oromgohda ishtirokchilar
               matematika, fizika, kimyo, biologiya kabi yo'nalishlar bo'yicha
               chuqurlashtirilgan bilimlar va amaliy ko'nikmalarni egallaydi.
             </p>
@@ -22,7 +22,7 @@ export default function AboutSection() {
         <div className="grid gap-6 lg:grid-cols-2 lg:gap-12 items-center mt-12">
           <div className="mx-auto w-full max-w-[500px] lg:max-w-none">
             <Image
-              src="/images/about.webp"
+              src="/images/about.jpg"
               alt="Science Camp outdoor activities"
               width={700}
               height={550}
