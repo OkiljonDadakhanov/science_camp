@@ -18,6 +18,36 @@ Oromgohda ishtirokchilar matematika, fizika, kimyo, biologiya kabi yo‘nalishla
             </p>
           </div>
         </div>
+
+
+         {/* Tashkilotchilar qismi */}
+        <div className="mt-10 text-center">
+          <h3 className="text-2xl font-bold mb-4">Tashkilotchilar</h3>
+          <div className="flex justify-center items-center gap-10 flex-wrap">
+            <div className="flex flex-col items-center">
+              <Image
+                src="/logos/fom.png"
+                alt="Fan Olimpiadalari Markazi"
+                width={100}
+                height={100}
+                className="rounded-md object-contain"
+              />
+              <p className="mt-2 text-sm text-gray-600">
+                Fan Olimpiadalari Markazi
+              </p>
+            </div>
+            <div className="flex flex-col items-center">
+              <Image
+                src="/logos/iqtidor.jpg"
+                alt="Iqtidorlar maktabi"
+                width={100}
+                height={100}
+                className="rounded-md object-contain"
+              />
+              <p className="mt-2 text-sm text-gray-600">Iqtidorlar maktabi</p>
+            </div>
+          </div>
+        </div>
         <div className="grid gap-6 lg:grid-cols-2 lg:gap-12 items-center mt-12">
           <div className="mx-auto w-full max-w-[500px] lg:max-w-none">
             <Image
