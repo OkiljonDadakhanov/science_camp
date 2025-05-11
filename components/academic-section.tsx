@@ -30,8 +30,8 @@ export default function AcademicSection() {
       icon: "/celestial-symbols.png"
     },
     {
-      name: "Kompyuter savodxonligi",
-      description: "Dasturlash, algoritmlar va hisoblash fikrlashni kodlash loyihalari orqali o'rganing.",
+      name: "Robototextika va Kompyuter savodxonligi ",
+      description: "Robototexnika va kompyuter savodxonligi bilan zamonaviy texnologiyalar olamiga qadam qo‘ying — dasturlash, algoritmlar va hisoblash fikrlashini real kodlash loyihalari orqali o‘rganing va amalda qo‘llang.",
       icon: "/abstract-computer-science.png",
     },
   ];
