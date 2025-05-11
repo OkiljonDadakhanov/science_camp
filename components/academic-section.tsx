@@ -4,6 +4,11 @@ import { Badge } from "@/components/ui/badge"
 
 export default function AcademicSection() {
   const subjects = [
+     {
+      name: "Matematika",
+      description: "Qiyin masalalar va real hayot misollari orqali mantiqiy fikrlash va muammo hal etish ko'nikmalarini rivojlantiring.",
+      icon: "/abstract-mathematics.png",
+    },
     {
       name: "Fizika",
       description: "Kinematika, elektr, magnitizm va zamonaviy fizika bo'limlarini amaliy tajribalar orqali o'rganing.",
@@ -25,11 +30,7 @@ export default function AcademicSection() {
   icon: "/celestial-symbols.png"
 }
 ,
-    {
-      name: "Matematika",
-      description: "Qiyin masalalar va real hayot misollari orqali mantiqiy fikrlash va muammo hal etish ko'nikmalarini rivojlantiring.",
-      icon: "/abstract-mathematics.png",
-    },
+   
     {
       name: "Kompyuter savodxonligi",
       description: "Dasturlash, algoritmlar va hisoblash fikrlashni kodlash loyihalari orqali o'rganing.",
