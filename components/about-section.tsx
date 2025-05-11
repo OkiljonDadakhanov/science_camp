@@ -11,7 +11,7 @@ export default function AboutSection() {
             Biz haqimizda 
             </h2>
             <p className="max-w-[900px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-            Summer Science Camp — bu Fan Olimpiadalari Markazi va Iqtidorlilar maktabi tomonidan 5–8-sinf o‘quvchilari uchun tashkil etilgan tanlov asosidagi ilmiy oromgoh.
+            Summer Science Camp — bu Fan Olimpiadalari Markazi va Iqtidorlilar maktabi tomonidan 5–9-sinf o‘quvchilari uchun tashkil etilgan tanlov asosidagi ilmiy oromgoh.
 Oromgohda ishtirokchilar matematika, fizika, kimyo, biologiya kabi yo‘nalishlar bo‘yicha chuqurlashtirilgan bilimlar va amaliy ko‘nikmalarni egallaydi.
 
 
