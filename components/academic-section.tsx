@@ -132,7 +132,7 @@ Toshkent davlat texnika universiteti magistri (elektronika), 2023-yil`,
                   { year: "2024", award: "Asos Akademiya o'quv markaziga asos solgan" }
                 ],
                 // Fixed the image path - using uppercase extension and filename
-                image: "/mentors/Olim.JPG",
+                image: "/mentors/olim.JPG",
               },
               {
                 name: "Sardor Qurbonboyev",
