@@ -176,7 +176,7 @@ Toshkent davlat texnika universiteti magistri (elektronika), 2023-yil`,
     { language: "Rus tili", level: "C1" },
     { language: "Ingliz tili", level: "B2" }
   ],
-  image: "/mentors/otabek.jpg"
+  image: "/mentors/Otabek.jpg"
 },
             ].map((mentor, i) => (
               <Card key={i} className="overflow-hidden transition-all duration-300 hover:shadow-lg">
