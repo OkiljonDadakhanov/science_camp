@@ -33,7 +33,7 @@ export default function OrganizersSection() {
       img: "/images/fayyoz.jpg" 
     },
     { 
-      name: "Dadaxanov Oqiljon", 
+      name: "Oqiljon Dadaxanov ", 
       role: "Dasturchi", 
       img: "/images/oqiljon.jpeg" 
     }
