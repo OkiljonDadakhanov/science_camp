@@ -10,30 +10,31 @@ import { Button } from "@/components/ui/button";
 
 export default function ActivitiesSlider() {
   const activities = [
-    {
-      title: "Robo Coding",
-      description:
-        "Build and program robots to complete challenges and solve real-world problems.",
-      image: "/images/robotics.jpg",
-    },
-    {
-      title: "Rocket Building",
-      description:
-        "Design, construct, and launch model rockets while learning about aerodynamics and propulsion.",
-      image: "/images/rocket.jpg",
-    },
-    {
-      title: "Laboratory Experiments",
-      description:
-        "Conduct advanced experiments in our fully-equipped labs under expert supervision.",
-      image: "/images/lab.jpg",
-    },
-    {
-      title: "Space Exploration",
-      description:
-        "Use telescopes and planetarium technology to observe and learn about celestial objects.",
-      image: "/images/space1.jpg",
-    },
+  {
+  title: "Robo Coding",
+  description:
+    "Robotlarni qurish va dasturlash orqali chaqiruvlarni bajarish va real dunyo muammolarini hal qilish.",
+  image: "/images/robotics.jpg"
+},
+{
+  title: "Raketa Qurilishi",
+  description:
+    "Aerodinamika va propulsiyani o'rganish davomida raketalarni loyihalash, qurish va uchirish.",
+  image: "/images/rocket.jpg"
+},
+{
+  title: "Laboratoriya Tajribalari",
+  description:
+    "Yaxshi jihozlangan laboratoriyalarimizda ekspert nazorati ostida ilg'or tajribalar o'tkazish.",
+  image: "/images/lab.jpg"
+},
+{
+  title: "Kosmik Kashfiyot",
+  description:
+    "Teleskoplar va planetariy texnologiyasidan foydalanib, osmon jismlarini kuzatish va o'rganish.",
+  image: "/images/space1.jpg"
+}
+
   ];
 
   const [currentIndex, setCurrentIndex] = useState(0);
