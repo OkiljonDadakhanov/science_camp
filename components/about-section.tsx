@@ -50,7 +50,7 @@ Oromgohda ishtirokchilar matematika, fizika, kimyo, biologiya kabi yo‘nalishla
                   { value: "1", label: "Haftalik dastur" },
                   { value: "50+", label: "Mashg’ulotlar " },
                   { value: "20+", label: "Mentorlar " },
-                  { value: "11-14", label: "Yosh oralig’i" },
+                  { value: "5-6-7-8-9", label: "Sinflar uchun" },
                 ].map((stat, i) => (
                   <div key={i} className="text-center">
                     <h4 className="text-3xl font-bold text-blue-600">
