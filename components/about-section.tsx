@@ -23,7 +23,7 @@ export default function OrganizersSection() {
       img: "/images/murod.jpg" 
     },
     { 
-      name: "Tursunbek Jumayev", 
+      name: "Tursunboy Jumayev", 
       role: "Akademik ishlar menejeri", 
       img: "/images/tursunboy.jpg" 
     },
