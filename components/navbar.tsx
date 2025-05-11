@@ -75,9 +75,12 @@ export default function Navbar() {
                 {link.name}
               </Link>
             ))}
+
+            <Link href="https://t.me/ScienceCampbot">
             <Button size="sm" className="bg-blue-600 hover:bg-blue-700">
               Ro'yxatdan o'tish
             </Button>
+            </Link>
           </nav>
 
           {/* Mobile Menu Button */}
