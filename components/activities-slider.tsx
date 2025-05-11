@@ -28,12 +28,12 @@ export default function ActivitiesSlider() {
     "Yaxshi jihozlangan laboratoriyalarimizda ekspert nazorati ostida ilg'or tajribalar o'tkazish.",
   image: "/images/lab.jpg"
 },
-{
-  title: "Kosmik Kashfiyot",
-  description:
-    "Teleskoplar va planetariy texnologiyasidan foydalanib, osmon jismlarini kuzatish va o'rganish.",
-  image: "/images/space1.jpg"
-}
+ {
+    title: "Kompyuter Savodxonligi",
+    description:
+      "Kompyuter va internetdan to‘g‘ri foydalanish, xavfsizlik qoidalari hamda asosiy dasturlar bilan ishlash ko‘nikmalarini o‘rganing.",
+    image: "/images/computer.jpg"
+  }
 
   ];
 
