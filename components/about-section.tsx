@@ -72,28 +72,27 @@ export default function OrganizersSection() {
           </div>
         </div>
 
-        {/* Organizers Section */}
-        <div className="mb-16">
-          <h3 className="text-2xl font-bold mb-8 text-center">Tashkilotchilar</h3>
+        {/* Organizers Section - ENLARGED */}
+        <div className="mb-20">
+          <h3 className="text-3xl font-bold mb-12 text-center">Tashkilotchilar</h3>
           
-        {/* Organizations */}
-<div className="flex justify-center items-center gap-10 flex-wrap mb-12">
-  {organizations.map((org, i) => (
-    <div key={i} className="flex flex-col items-center">
-      <div className="w-32 h-32 flex items-center justify-center">
-        <img
-          src={org.logo}
-          alt={org.alt}
-          className="max-w-full max-h-full object-contain"
-        />
-      </div>
-      <p className="mt-2 text-sm text-gray-600">
-        {org.name}
-      </p>
-    </div>
-  ))}
-</div>
-
+          {/* Organizations - BIGGER */}
+          <div className="flex justify-center items-center gap-16 md:gap-24 flex-wrap mb-16">
+            {organizations.map((org, i) => (
+              <div key={i} className="flex flex-col items-center">
+                <div className="w-48 h-48 md:w-64 md:h-64 flex items-center justify-center p-4 border border-gray-100 rounded-lg shadow-sm">
+                  <img
+                    src={org.logo}
+                    alt={org.alt}
+                    className="max-w-full max-h-full object-contain"
+                  />
+                </div>
+                <p className="mt-4 text-lg md:text-xl font-medium text-gray-800">
+                  {org.name}
+                </p>
+              </div>
+            ))}
+          </div>
 
           {/* Team Members */}
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
