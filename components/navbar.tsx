@@ -30,61 +30,49 @@ export default function Navbar() {
     setIsOpen(false);
   };
 
+  // Navigation links array - defined once for reuse
+  const navLinks = [
+    { name: "Home", href: "#" },
+    { name: "Biz haqimizda", href: "#about" },
+    { name: "Akademik o'quv dasturlari", href: "#academic" },
+    { name: "Foto lavhalar", href: "#intellectual-activities" },
+    { name: "Ijtimoiy hayot ", href: "#non-academic" },
+    { name: "Joylashuv", href: "#location" },
+  ];
+
   return (
     <header
       className={cn(
         "fixed top-0 left-0 right-0 z-50 transition-all duration-300",
-        isScrolled ? "bg-white border-b shadow-sm py-2" : "bg-transparent py-4"
+        isScrolled || isOpen ? "bg-white border-b shadow-sm py-2" : "bg-transparent py-4"
       )}
     >
       <div className="container px-4 md:px-6 mx-auto">
         <div className="flex items-center justify-between">
-          {/* Logo - Increased size from h-16 w-16 to h-24 w-24 */}
+          {/* Logo */}
           <Link href="/" className="flex items-center gap-2">
             <div className="relative h-28 w-28 overflow-hidden">
-              {/* Logo placeholder - to be replaced later */}
               <div className="h-full flex items-center justify-center rounded-md">
                 <Image
                   src="/images/logo.png"
                   width={200}
                   height={200}
-                  alt="Picture of the author"
+                  alt="Logo"
                   className="object-contain"
                 />
               </div>
             </div>
           </Link>
 
-          {/* Desktop Navigation */}
-          <nav className="hidden md:flex items-center gap-6">
-            {[
-              { name: "Home", href: "#" },
-              { name: "Biz haqimizda", href: "#about" },
-              { name: "Akademik o'quv dasturlari", href: "#academic" },
-              { name: "Foto lavhalar", href: "#intellectual-activities" },
-              { name: "Ijtimoiy hayot ", href: "#non-academic" },
-              // { name: "Ko'p beriladigan savollar ", href: "#faq" },
-              { name: "Joylashuv", href: "#location" },
-            ].map((link, i) => (
-              <Link
-                key={i}
-                href={link.href}
-                className="text-sm font-medium transition-colors hover:text-blue-600"
-                onClick={handleLinkClick}
-              >
-                {link.name}
-              </Link>
-            ))}
-
+          {/* Mobile Registration Button - Show only on mobile next to logo */}
+          <div className="md:hidden flex items-center gap-2">
             <Link href="https://t.me/ScienceCampbot">
-            <Button size="sm" className="bg-blue-600 hover:bg-blue-700">
-              Ro'yxatdan o'tish
-            </Button>
+              <Button size="sm" className="bg-blue-600 hover:bg-blue-700">
+                Ro'yxatdan o'tish
+              </Button>
             </Link>
-          </nav>
-
-          {/* Mobile Menu Button */}
-          <div className="md:hidden flex items-center">
+            
+            {/* Mobile Menu Button */}
             <button
               className="flex items-center p-2 rounded-md"
               onClick={() => setIsOpen(!isOpen)}
@@ -97,21 +85,33 @@ export default function Navbar() {
               )}
             </button>
           </div>
+
+          {/* Desktop Navigation */}
+          <nav className="hidden md:flex items-center gap-6">
+            {navLinks.map((link, i) => (
+              <Link
+                key={i}
+                href={link.href}
+                className="text-sm font-medium transition-colors hover:text-blue-600"
+                onClick={handleLinkClick}
+              >
+                {link.name}
+              </Link>
+            ))}
+
+            <Link href="https://t.me/ScienceCampbot">
+              <Button size="sm" className="bg-blue-600 hover:bg-blue-700">
+                Ro'yxatdan o'tish
+              </Button>
+            </Link>
+          </nav>
         </div>
 
         {/* Mobile Navigation */}
         {isOpen && (
-          <div className="md:hidden pt-4 pb-2">
+          <div className="md:hidden pt-4 pb-2 bg-white">
             <nav className="flex flex-col gap-2">
-              {[
-                { name: "Home", href: "#" },
-                { name: "About", href: "#about" },
-                { name: "Academic", href: "#academic" },
-                { name: "Activities", href: "#intellectual-activities" },
-                { name: "Recreation", href: "#non-academic" },
-                { name: "FAQ", href: "#faq" },
-                { name: "Location", href: "#location" },
-              ].map((link, i) => (
+              {navLinks.map((link, i) => (
                 <Link
                   key={i}
                   href={link.href}
@@ -121,14 +121,6 @@ export default function Navbar() {
                   {link.name}
                 </Link>
               ))}
-              <div className="pt-2">
-                <Button
-                  size="sm"
-                  className="w-full bg-blue-600 hover:bg-blue-700"
-                >
-                  Register Now
-                </Button>
-              </div>
             </nav>
           </div>
         )}

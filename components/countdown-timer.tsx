@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { CalendarClock } from "lucide-react";
+import Link from 'next/link'
 
 interface TimeLeft {
   days: number;
@@ -115,12 +116,15 @@ export default function CountdownTimer() {
           )}
 
           <div className="mt-8">
-            <Button
-              size="lg"
-              className="bg-white text-blue-700 hover:bg-white/90 font-semibold px-8 py-6 text-lg shadow-lg hover:shadow-xl transition-all duration-300"
-            >
-              {isExpired ? "Kutilayotganlar ro‘yxatiga qo‘shiling" : "Ro‘yxatdan o‘tish"}
-            </Button>
+            <Link href={isExpired ? "/waiting-list" : "https://t.me/ScienceCampbot"}>
+  <Button
+    size="lg"
+    className="bg-white text-blue-700 hover:bg-white/90 font-semibold px-8 py-6 text-lg shadow-lg hover:shadow-xl transition-all duration-300"
+  >
+    {isExpired ? "Kutilayotganlar ro‘yxatiga qo‘shiling" : "Ro‘yxatdan o‘tish"}
+  </Button>
+</Link>
+
           </div>
         </div>
       </div>
