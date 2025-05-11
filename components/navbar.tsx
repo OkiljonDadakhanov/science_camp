@@ -63,7 +63,7 @@ export default function Navbar() {
               { name: "Akademik o'quv dasturlari", href: "#academic" },
               { name: "Foto lavhalar", href: "#intellectual-activities" },
               { name: "Ijtimoiy hayot ", href: "#non-academic" },
-              { name: "Ko'p beriladigan savollar ", href: "#faq" },
+              // { name: "Ko'p beriladigan savollar ", href: "#faq" },
               { name: "Joylashuv", href: "#location" },
             ].map((link, i) => (
               <Link

@@ -3,7 +3,7 @@ import AboutSection from "@/components/about-section"
 import AcademicSection from "@/components/academic-section"
 import ActivitiesSlider from "@/components/activities-slider"
 import NonAcademicSection from "@/components/non-academic-section"
-import FAQSection from "@/components/faq-section"
+// import FAQSection from "@/components/faq-section"
 import StaticMap from "@/components/static-map"
 import CountdownTimer from "@/components/countdown-timer"
 import Footer from "@/components/footer"
@@ -19,7 +19,7 @@ export default function Home() {
       <AcademicSection />
       <ActivitiesSlider />
       <NonAcademicSection />
-      <FAQSection />
+      {/* <FAQSection /> */}
       <StaticMap />
       <Footer />
     </main>
