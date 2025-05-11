@@ -20,10 +20,11 @@ export default function AcademicSection() {
       icon: "/dna-helix-icon.png",
     },
     {
-      name: "Astronomiya",
-      description: "Osmon jismlarini kuzatib, fazo tadqiqotlari haqida ma'lumot oling va koinot hodisalarini tushuning.",
-      icon: "/celestial-symbols.png",
-    },
+  name: "Raketashunoslik",
+  description: "Raketalar qanday ishlashini o‘rganing, ularni loyihalash va uchirish asoslarini tushuning hamda koinotga sayohat qilish imkoniyatlari bilan tanishing.",
+  icon: "/celestial-symbols.png"
+}
+,
     {
       name: "Matematika",
       description: "Qiyin masalalar va real hayot misollari orqali mantiqiy fikrlash va muammo hal etish ko'nikmalarini rivojlantiring.",
