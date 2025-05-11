@@ -21,7 +21,7 @@ Oromgohda ishtirokchilar matematika, fizika, kimyo, biologiya kabi yo‘nalishla
         <div className="grid gap-6 lg:grid-cols-2 lg:gap-12 items-center mt-12">
           <div className="mx-auto w-full max-w-[500px] lg:max-w-none">
             <Image
-              src="/images/about.webp"
+              src="/images/us.jpg"
               alt="Science Camp outdoor activities"
               width={700}
               height={550}
