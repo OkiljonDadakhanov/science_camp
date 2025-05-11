@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
+import Link from 'next/link';
 
 export default function HeroSection() {
   return (
@@ -17,19 +18,23 @@ export default function HeroSection() {
               Ilm olamiga birinchi qadamingizni qo'ying — kashf qilish, o'rganish va o'zgarishga tayyor bo'ling.
             </p>
             <div className="flex flex-col gap-4 min-[400px]:flex-row">
-              <Button
-                size="lg"
-                className="text-lg py-6 px-8 bg-gradient-to-r from-blue-700 to-blue-500 hover:from-blue-800 hover:to-blue-600 transition-all duration-300"
-              >
-                Ro'yxatdan o'tish
-              </Button>
-              <Button
-                size="lg"
-                variant="outline"
-                className="text-lg py-6 px-8 border-blue-300 hover:border-blue-400 transition-all duration-300"
-              >
-                Kirish
-              </Button>
+              <Link href="https://t.me/ScienceCampbot">
+                <Button
+                  size="lg"
+                  className="text-lg py-6 px-8 bg-gradient-to-r from-blue-700 to-blue-500 hover:from-blue-800 hover:to-blue-600 transition-all duration-300"
+                >
+                  Ro'yxatdan o'tish
+                </Button>
+              </Link>
+              <Link href="https://camp.eduolimp.uz">
+                <Button
+                  size="lg"
+                  variant="outline"
+                  className="text-lg py-6 px-8 border-blue-300 hover:border-blue-400 transition-all duration-300"
+                >
+                  Kirish
+                </Button>
+              </Link>
             </div>
           </div>
           <div className="mx-auto w-full max-w-[600px] lg:max-w-none">

@@ -13,7 +13,6 @@ interface TimeLeft {
 }
 
 export default function CountdownTimer() {
-  // Keyingi oromgoh sessiyasi sanasi (11-iyun, 2025)
   const nextSessionDate = new Date("May 31, 2025 00:00:00").getTime();
 
   const [timeLeft, setTimeLeft] = useState<TimeLeft>({
@@ -88,8 +87,8 @@ export default function CountdownTimer() {
           <h2 className="text-2xl font-bold tracking-tighter sm:text-3xl md:text-4xl lg:text-5xl">
             {isExpired
               ? "Yozgi oromgoh boshlandi!"
-              : "Summer Science Camp 2025 gacha qolgan vaqt"}
-          </h2>
+              : "Ro'yxatdan o'tish tugashiga qolgan vaqt"}
+          </h2> 
 
           <p className="max-w-[700px] text-white/90 text-lg">
             {isExpired
