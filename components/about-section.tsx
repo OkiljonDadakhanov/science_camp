@@ -50,10 +50,10 @@ export default function OrganizersSection() {
 
   // Stats data
   const stats = [
-    { value: "1", label: "Haftalik dastur" },
+    { value: "8", label: "Kunlik dastur" },
     { value: "50+", label: "Mashg'ulotlar" },
     { value: "20+", label: "Mentorlar" },
-    { value: "5-6-7-8-9", label: "Sinflar uchun" }
+    { value: "5-6-7-8–9", label: "Sinflar uchun" }
   ];
 
   return (
@@ -135,10 +135,10 @@ export default function OrganizersSection() {
               <div className="grid grid-cols-2 gap-6 sm:grid-cols-4">
                 {stats.map((stat, i) => (
                   <div key={i} className="text-center">
-                    <h4 className="text-3xl font-bold text-blue-600">
+                    <h4 className="text-3xl font-bold text-blue-600 whitespace-nowrap">
                       {stat.value}
                     </h4>
-                    <p className="text-sm text-gray-500">{stat.label}</p>
+                    <p className="text-sm text-gray-500 whitespace-nowrap">{stat.label}</p>
                   </div>
                 ))}
               </div>
