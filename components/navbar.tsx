@@ -32,7 +32,7 @@ export default function Navbar() {
 
   // Navigation links array - defined once for reuse
   const navLinks = [
-    { name: "Home", href: "#" },
+    { name: "Bosh sahifa", href: "#" },
     { name: "Biz haqimizda", href: "#about" },
     { name: "Akademik o'quv dasturlari", href: "#academic" },
     { name: "Foto lavhalar", href: "#intellectual-activities" },

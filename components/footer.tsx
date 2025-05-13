@@ -34,7 +34,7 @@ export default function Footer() {
             <h3 className="text-xl font-bold">Tezkor havolalar</h3>
             <ul className="space-y-2">
               {[
-                { name: "Home", href: "#" },
+                { name: "Bosh sahifa", href: "#" },
                 { name: "Biz haqimizda", href: "#about" },
                 { name: "Akademik o'quv dasturlari", href: "#academic" },
                 { name: "Foto lavhalar", href: "#intellectual-activities" },
