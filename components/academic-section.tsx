@@ -12,7 +12,7 @@ export default function AcademicSection() {
     {
       name: "Fizika",
       description: "Kinematika, elektr, magnitizm va zamonaviy fizika bo'limlarini amaliy tajribalar orqali o'rganing.",
-      icon: "/physics-abstract.png",
+      icon: "/physics.jpg",
     },
     {
       name: "Kimyo",
@@ -27,12 +27,12 @@ export default function AcademicSection() {
     {
       name: "Raketashunoslik",
       description: "Raketalar qanday ishlashini o'rganing, ularni loyihalash va uchirish asoslarini tushuning hamda koinotga sayohat qilish imkoniyatlari bilan tanishing.",
-      icon: "/celestial-symbols.png"
+      icon: "/rocket.jpg"
     },
     {
       name: "Robototextika va Kompyuter savodxonligi ",
       description: "Robototexnika va kompyuter savodxonligi bilan zamonaviy texnologiyalar olamiga qadam qo‘ying — dasturlash, algoritmlar va hisoblash fikrlashini real kodlash loyihalari orqali o‘rganing va amalda qo‘llang.",
-      icon: "/abstract-computer-science.png",
+      icon: "/robotics.jpg",
     },
   ];
   
