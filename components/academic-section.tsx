@@ -54,7 +54,6 @@ export default function AcademicSection() {
               {
                 name: "Firdavs Sobirov",
                 role: "Kimyo mentori",
-                education: "Yangi O'zbekiston universiteti, Kimyo muhandisligi yo'nalishi talabasi",
                 position: "O'zbekiston Kimyo fanidan terma jamoa rahbari",
                 achievements: [
                    { year: "2023-2024", award: "Respublika va Xalqaro olimpiadaga saralash bosqichlarida hakam sifatida ishtirok etgan" },
@@ -74,8 +73,7 @@ export default function AcademicSection() {
               {
                 name: "Fayyoz Tuychiyev",
                 role: "Robototexnika bo'yicha mentor",
-                education: `Sankt-Peterburg davlat elektrotexnika universiteti "LETI" bitiruvchisi (elektronika va nanoelektronika), 2021-yil;
-Toshkent davlat texnika universiteti magistri (elektronika), 2023-yil`,
+                education: `Elektronika va nanoelektronika bo'yicha mutaxassis`,
                 position: "Robototexnika bo'yicha mentor",
                 achievements: [
                   { year: "2017", award: "Kelajak muhandislari olimpiadasi g'olibi (Sankt-Peterburg davlat elektrotexnika universiteti tomonidan)" },
@@ -90,7 +88,6 @@ Toshkent davlat texnika universiteti magistri (elektronika), 2023-yil`,
               {
                 name: "Saida Abdullaeyeva",
                 role: "Kimyo mentori",
-                education: "Toshkent davlat tibbiyot universiteti talabasi",
                 position: "Kimyo yoʻnalishi boʻyicha Zulfiya davlat mukofoti sohibasi",
                 achievements: [
                   { year: "2024", award: "56-Xalqaro Kimyo Olimpiadasi (IChO) – kumush medal" },
@@ -105,7 +102,6 @@ Toshkent davlat texnika universiteti magistri (elektronika), 2023-yil`,
               {
                 name: "Asliddin Fayzullaev",
                 role: "Fizika mentori",
-                education: "Oʻzbekiston Milliy Universiteti, Fizika fakulteti magistranti (2024–hozir)",
                 position: "I toifali o'qituvchi",
                 achievements: [
                   { year: "2025", award: "O'qituvchilar oʻrtasida Respublika fizika olimpiadasida 1-oʻrin" },
@@ -120,7 +116,6 @@ Toshkent davlat texnika universiteti magistri (elektronika), 2023-yil`,
               {
                 name: "Olimjon Olimov",
                 role: "Matematika fanidan mentor",
-                education: "Yangi O'zbekiston Universiteti, Dasturiy ta'minot yo'nalishi mutaxassisi",
                 position: "Geometriya bo'yicha O'zbekiston milliy jamoalari treneri",
                 achievements: [
                   { year: "2023", award: "ICPC Semifinal Astana musobaqasida bronza medal sovrindori" },
@@ -134,25 +129,10 @@ Toshkent davlat texnika universiteti magistri (elektronika), 2023-yil`,
                 // Fixed the image path - using uppercase extension and filename
                 image: "/mentors/olim.JPG",
               },
-              {
-                name: "Sardor Qurbonboyev",
-                role: "Biologiya bo'yicha Mentor",
-                education: "ITMA Abu Ali Ibn Sino nomidagi ixtisoslashtirilgan maktab bitiruvchisi (2024)",
-                position: "Hozirda Toshkent Tibbiyot Akademiyasi 1-kurs talabasi",
-                achievements: [
-                  { year: "", award: "Abu Ali Ibn Sino nomidagi Xalqaro Biologiya Olimpiadasi kumush medal sohibi" },
-                  { year: "", award: " STEM olimpiadasining Respublika bosqichi 1-o'rin g'olibi" },
-                  { year: "", award: "Biologiya fanidan Asosiy Olimpiadaning viloyat bosqichi 1-o'rin egasi" },
-                  { year: "", award: "Abu Ali Ibn Sino tayanch maktabida biologiya fanidan olimpiadaga tayyorlovchi trener" },
-                  { year: "", award: "35-Xalqaro biologiya olimpaidasi ishtirokchisi " },
-                  { year: "", award: "O'quvchilarga sitologiya, molekulyar biologiya, fiziologiya, genetika, ekologiya va bioinformatika fanlari bo'yicha chuqurlashtirilgan bilim beradi " },
-                ],
-                image: "/mentors/sardor.jpg",
-              },
+           
               {
                 name: "Otabek Hasanov O'tkir o'g'li",
                 role: "Fizika va Fizika Olimpiada Mentor",
-                education: "Moskva Fizika-Texnika Instituti (MFTI), Fizika bo'yicha, QS reytingida top 50 talikka kiradi",
                 position: "2-toifa o'qituvchi",
                 achievements: [
                   { year: "2018", award: "Xalqaro Mirzo Ulug'bek olimpiadasida fizika fanidan kumush medal (IMUO 2018)" },
