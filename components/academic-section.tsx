@@ -147,7 +147,6 @@ Toshkent davlat texnika universiteti magistri (elektronika), 2023-yil`,
                   { year: "", award: "35-Xalqaro biologiya olimpaidasi ishtirokchisi " },
                   { year: "", award: "O'quvchilarga sitologiya, molekulyar biologiya, fiziologiya, genetika, ekologiya va bioinformatika fanlari bo'yicha chuqurlashtirilgan bilim beradi " },
                 ],
-                additionalInfo: "Navoiy shahridagi 11-AFCHOʻIM maktabini 2024-yilda tamomlagan",
                 image: "/mentors/sardor.jpg",
               },
               {
