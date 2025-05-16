@@ -31,7 +31,7 @@ export default function AcademicSection() {
     },
     {
       name: "Robototextika va Kompyuter savodxonligi ",
-      description: "Robototexnika va kompyuter savodxonligi bilan zamonaviy texnologiyalar olamiga qadam qo‘ying — dasturlash, algoritmlar va hisoblash fikrlashini real kodlash loyihalari orqali o‘rganing va amalda qo‘llang.",
+      description: "Robototexnika va kompyuter savodxonligi bilan zamonaviy texnologiyalar olamiga qadam qo'ying — dasturlash, algoritmlar va hisoblash fikrlashini real kodlash loyihalari orqali o'rganing va amalda qo'llang.",
       icon: "/robotics.jpg",
     },
   ];
@@ -74,7 +74,6 @@ export default function AcademicSection() {
                 name: "Fayyoz Tuychiyev",
                 role: "Robototexnika bo'yicha mentor",
                 education: `Elektronika va nanoelektronika bo'yicha mutaxassis`,
-                position: "Robototexnika bo'yicha mentor",
                 achievements: [
                   { year: "2017", award: "Kelajak muhandislari olimpiadasi g'olibi (Sankt-Peterburg davlat elektrotexnika universiteti tomonidan)" },
                   { year: "2018", award: "Sankt-Peterburg shahri universitetlari o'rtasida o'tkazilgan fizika fan olimpiadasi – 3-o'rin" },
@@ -96,21 +95,17 @@ export default function AcademicSection() {
                   { year: "", award: "Abu Rayhon Beruniy nomidagi xalqaro kimyo olimpiadasi (ARBIChO) – kumush medal" },
                   { year: "", award: "IMChO-Xalqaro Mendeleyev kimyo olimpiadasi ishtirokchisi" },
                 ],
-                additionalInfo: "Navoiy shahridagi 11-AFCHOʻIM maktabini 2024-yilda tamomlagan",
                 image: "/mentors/saida.JPG",
               },
               {
                 name: "Asliddin Fayzullaev",
-                role: "Fizika mentori",
-                position: "I toifali o'qituvchi",
+                role: "Fizika va Fizika Olimpiada Mentor",
                 achievements: [
                   { year: "2025", award: "O'qituvchilar oʻrtasida Respublika fizika olimpiadasida 1-oʻrin" },
-                  { year: "2025", award: "I toifa unvoni berilgan" },
                   { year: "2024", award: "GRE Physics xalqaro sertifikati – 900/990 ball" },
                   { year: "2020–2024", award: "OʻzMU Fizika fakulteti talabasi – GPA 92 ball" },
                   { year: "2018", award: "Innovatsion Respublika fizika olimpiadasida 1-oʻrin" },
                 ],
-                // Fixed the image path - using uppercase extension
                 image: "/mentors/asliddin.JPG",
               },
               {
@@ -126,14 +121,12 @@ export default function AcademicSection() {
                   { year: "2022–2024", award: "O'zbekiston milliy jamoalari uchun geometriya bo'yicha trener" },
                   { year: "2024", award: "Asos Akademiya o'quv markaziga asos solgan" }
                 ],
-                // Fixed the image path - using uppercase extension and filename
                 image: "/mentors/olim.JPG",
               },
            
               {
                 name: "Otabek Hasanov O'tkir o'g'li",
                 role: "Fizika va Fizika Olimpiada Mentor",
-                position: "2-toifa o'qituvchi",
                 achievements: [
                   { year: "2018", award: "Xalqaro Mirzo Ulug'bek olimpiadasida fizika fanidan kumush medal (IMUO 2018)" },
                   { year: "2018", award: "IPHO olimpiadasi ishtirokchisi" },
@@ -209,9 +202,7 @@ export default function AcademicSection() {
                       </div>
                     </div>
                     
-                    {mentor.additionalInfo && (
-                      <p className="text-xs text-gray-500 italic">{mentor.additionalInfo}</p>
-                    )}
+                    {/* Removed additionalInfo reference */}
                   </div>
                 </CardContent>
               </Card>
