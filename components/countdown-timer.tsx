@@ -14,7 +14,7 @@ interface TimeLeft {
 }
 
 export default function CountdownTimer() {
-  const nextSessionDate = new Date("May 31, 2025 00:00:00").getTime();
+  const nextSessionDate = new Date("June 10, 2025 00:00:00").getTime();
 
   const [timeLeft, setTimeLeft] = useState<TimeLeft>({
     days: 0,
