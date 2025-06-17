@@ -146,7 +146,7 @@ export default function ExamInfoPage() {
         </CardContent>
       </Card>
 
-      <Card className="mb-8 shadow-lg">
+      <Card className="mb-8 shadow-lg" id="exam-schedule">
         <CardHeader>
           <CardTitle className="flex items-center text-2xl text-blue-300">
             <CalendarDays className="w-7 h-7 mr-3 text-blue-300" />
