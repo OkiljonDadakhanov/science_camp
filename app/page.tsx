@@ -8,6 +8,7 @@ import StaticMap from "@/components/static-map"
 // import CountdownTimer from "@/components/countdown-timer"
 import Footer from "@/components/footer"
 import Navbar from "@/components/navbar"
+import ExamInfoPage from "@/components/program"
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
       <Navbar />
       <HeroSection />
       {/* <CountdownTimer /> */}
+      <ExamInfoPage />
       <AboutSection />
       <AcademicSection />
       <ActivitiesSlider />
