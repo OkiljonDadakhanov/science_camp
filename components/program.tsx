@@ -32,67 +32,80 @@ const locations = [
   {
     region: "Qoraqalpogʻiston Respublikasi",
     address:
-      "Pedagogik mahorat markazi (Nukus shahri, Y. Alakoʻz koʻchasi, 54-uy)",
+      'Nukus shahar, 52- sonli umumta`lim maktabi Marat Nurmuhammedov ko`chasi 53',
+    link: "https://yandex.ru/maps/org/48017255722?si=0jagdjwrmtkc59mavkv7c4rnz4",
   },
   {
     region: "Andijon viloyati",
     address:
       "Pedagoglarni yangi metodikalarga oʻrgatish milliy markazi (Andijon shahar, Istiqlol koʻchasi, 8-uy)",
+      link: "https://yandex.ru/maps/org/215782377454?si=0jagdjwrmtkc59mavkv7c4rnz4",
   },
   {
     region: "Buxoro viloyati",
     address:
       "Buxoro shahridagi 44-maktab binosi (Buxoro shahar, Bog'ishamol ko'chasi 5-uy. Mo'ljal: oldingi Pedagogika kolleji)",
+    link: "https://yandex.ru/maps/org/182862476548?si=0jagdjwrmtkc59mavkv7c4rnz4",
   },
   {
     region: "Jizzax viloyati",
     address:
       "Jizzax shahridagi 4-maktab binosi (Jizzax shahar, “Kimyogar” MFY, Toʻqimachilar koʻchasi, 45-uy)",
+    link: "https://yandex.ru/maps/org/227289740864?si=0jagdjwrmtkc59mavkv7c4rnz4",
   },
   {
     region: "Qashqadaryo viloyati",
     address:
       "Pedagoglarni yangi metodikalarga oʻrgatish milliy markazi (Qarshi shahar, Olimlar koʻchasi, 2-uy)",
+    link: "https://maps.app.goo.gl/5zqw98F9nSMVx4nR8",
   },
   {
     region: "Navoiy viloyati",
     address:
       "Navoiy shahridagi “Barkamol avlod” bolalar maktabi (Navoiy shahri, Aloqa koʻchasi, 6-uy)",
+    link: "https://maps.app.goo.gl/b9ssxmNKwbeVX3Yt7",
   },
   {
     region: "Namangan viloyati",
     address:
       "Namangan shahridagi 15-maktab binosi (Namangan shahri, “Gʻishkoʻprik” MFY, Uychi koʻchasi, 329-uy)",
+    link: "https://maps.app.goo.gl/ZDAJiW5N7XEtsTRe7",
   },
   {
     region: "Samarqand viloyati",
     address:
       "Pedagoglarni yangi metodikalarga oʻrgatish milliy markazi (Samarqand shahar, Hasan Obiddinov koʻchasi, 7-uy)",
+    link: "https://maps.app.goo.gl/FaixKVE8brPPpvX8A",
   },
   {
     region: "Sirdaryo viloyati",
     address:
       "Guliston shahridagi “Barkamol avlod” bolalar maktabi (Guliston shahri, “Shodlik” MFY, Navoiy shoh koʻchasi, 55-uy)",
+    link: "https://maps.app.goo.gl/2GwLW99FTbgEk5WdA",
   },
   {
     region: "Surxondaryo viloyati",
     address:
       'Termiz shahridagi 26-maktab binosi (Termiz shahri "Kattabog\'" MFY, Farovon massivi, 2-mavze, 7-manzilgoh. Mo\'ljal: "Yashil dunyo" bozori)',
+    link: "https://maps.app.goo.gl/RXiYiB9UHNPCdCSY9",
   },
   {
     region: "Fargʻona viloyati",
     address:
       "Fargʻona shahridagi 28-maktab binosi (Fargʻona shahar, “Istiqlol” MFY, Abdulla Qodiriy ko‘chasi, 13-“A” uy)",
+    link: "https://maps.app.goo.gl/C3Zws1gT3XXnDXcz5",
   },
   {
     region: "Xorazm viloyati",
     address:
       'Urganch shahridagi 17-maktab binosi (Urganch shahar "4-Yuqori bog\'" mahallasi, Maxtumquli ko\'chasi, 229 "A"-uy)',
+    link: "https://yandex.ru/maps/org/79849992675?si=0jagdjwrmtkc59mavkv7c4rnz4",
   },
   {
     region: "Toshkent shahri va Toshkent viloyati",
     address:
       "Pedagogik mahorat va xalqaro baholash ilmiy-amaliy markazi (Toshkent shahar, Olmazor tumani, Beruniy koʻchasi, 83-uy)",
+    link: "https://maps.app.goo.gl/ULemL1YxXEiNGc1i9",
   },
 ];
 
@@ -138,7 +151,18 @@ export default function ExamInfoPage() {
                   {location.region}
                 </AccordionTrigger>
                 <AccordionContent className="text-slate-700 pl-6">
-                  {location.address}
+                  {location.link ? (
+                    <a
+                      href={location.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-blue-600 underline hover:text-blue-800"
+                    >
+                      {location.address}
+                    </a>
+                  ) : (
+                    location.address
+                  )}
                 </AccordionContent>
               </AccordionItem>
             ))}
