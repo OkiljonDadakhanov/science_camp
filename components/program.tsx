@@ -221,15 +221,7 @@ export default function ExamInfoPage() {
         </CardContent>
       </Card>
 
-      <div className="bg-green-100 border-l-4 border-green-500 text-green-700 p-6 rounded-md shadow-md flex items-start">
-        <AlertTriangle className="w-8 h-8 mr-4 text-green-500 flex-shrink-0" />
-        <div>
-          <h3 className="font-bold text-lg mb-1">Muhim Ma’lumot!</h3>
-          <p className="text-base">
-            Saralash imtihoni <strong className="font-semibold">20-iyun</strong> kuni bo‘lib o‘tadi.
-          </p>
-        </div>
-      </div>
+   
     </div>
   );
 }
