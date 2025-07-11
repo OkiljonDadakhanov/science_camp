@@ -67,12 +67,12 @@ export default function Navbar() {
 
           {/* Mobile Registration Button - Show only on mobile next to logo */}
           <div className="md:hidden flex items-center gap-2">
-            <Link href="https://t.me/ScienceCampbot">
+            {/* <Link href="https://t.me/ScienceCampbot">
               <Button size="sm" className="bg-blue-600 hover:bg-blue-700">
                 Ro'yxatdan o'tish
               </Button>
             </Link>
-            
+             */}
             {/* Mobile Menu Button */}
             <button
               className="flex items-center p-2 rounded-md"
@@ -100,11 +100,11 @@ export default function Navbar() {
               </Link>
             ))}
 
-            <Link href="https://t.me/ScienceCampbot">
+            {/* <Link href="https://t.me/ScienceCampbot">
               <Button size="sm" className="bg-blue-600 hover:bg-blue-700">
                 Ro'yxatdan o'tish
               </Button>
-            </Link>
+            </Link> */}
           </nav>
         </div>
 

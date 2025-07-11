@@ -18,14 +18,14 @@ export default function HeroSection() {
               Ilm olamiga birinchi qadamingizni qo'ying — kashf qilish, o'rganish va o'zgarishga tayyor bo'ling.
             </p>
             <div className="flex flex-col gap-4 min-[400px]:flex-row">
-              <Link href="https://t.me/ScienceCampbot">
+              {/* <Link href="https://t.me/ScienceCampbot">
                 <Button
                   size="lg"
                   className="text-lg py-6 px-8 bg-gradient-to-r from-blue-700 to-blue-500 hover:from-blue-800 hover:to-blue-600 transition-all duration-300"
                 >
                   Ro'yxatdan o'tish
                 </Button>
-              </Link>
+              </Link> */}
               <Link href="https://camp.eduolimp.uz">
                 <Button
                   size="lg"
